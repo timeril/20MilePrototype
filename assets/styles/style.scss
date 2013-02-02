@@ -1,0 +1,43 @@
+/*
+ * 20Mile Interactive Stylesheet
+ * 
+ * Author: Rodrigo Passos;
+ * Notes: I am using Twitter Bootstrap and Bourbon (bourbon.io)
+ */
+
+@include font-face(Asap, '/fonts/asap/Asap-Regular');
+@include font-face(Asap, '/fonts/asap/Asap-Bold', bold);
+@include font-face(Asap, '/fonts/asap/Asap-Italic', normal, italic);
+@include font-face(Asap, '/fonts/asap/Asap-BoldItalic', bold, italic);
+
+* {
+	font-family: Asap;
+}
+
+body {
+	background-color: #3a3937;
+}
+
+div[role=home] {
+	background-color: #b2b1ad;
+	background-image: url(layout/topo_bg.png);
+	background-repeat: repeat-x;
+}
+
+div[role=masterhead] {
+	background-color: #fff;
+}
+
+header {
+
+	a.logo {
+		display: block;
+		width: 165px;
+		height: 60px;
+		background: url(layout/logo.png) no-repeat left top;
+		text-indent: -99999px;
+		color: transparent;
+	}
+
+}
+
