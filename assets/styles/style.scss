@@ -11,6 +11,7 @@
 @include font-face(Asap, '/fonts/asap/Asap-BoldItalic', bold, italic);
 
 * {
+	@include prefixer(font-smoothing, antialiased, webkit moz spec);
 	font-family: Asap;
 }
 
@@ -37,6 +38,34 @@ header {
 		background: url(layout/logo.png) no-repeat left top;
 		text-indent: -99999px;
 		color: transparent;
+	}
+
+	nav {
+		ul {
+			list-style: none;
+
+			li {
+				float: left;
+				margin-left: 50px;
+
+				a {
+					@include inline-block;
+					padding-top: 50px;
+					padding-bottom: 20px;
+					color: #B2B2B2;
+					font-size: 1.2em;
+					font-weight: 100;
+
+					&:hover {
+						text-decoration: none;
+
+						&.nav-expertise {
+
+						}
+					}
+				}
+			}
+		}
 	}
 
 }
