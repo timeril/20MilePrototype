@@ -10,9 +10,16 @@
 @include font-face(Asap, '/fonts/asap/Asap-Italic', normal, italic);
 @include font-face(Asap, '/fonts/asap/Asap-BoldItalic', bold, italic);
 
+
+// Set variables
+$headingsFontWeight: 	normal;
+$sansFontFamily:        Asap, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+@import "bootstrap/bootstrap";
+
 * {
 	@include prefixer(font-smoothing, antialiased, webkit moz spec);
-	font-family: Asap;
 }
 
 body {
@@ -23,6 +30,9 @@ div[role=home] {
 	background-color: #b2b1ad;
 	background-image: url(layout/topo_bg.png);
 	background-repeat: repeat-x;
+	display: block;
+	min-height: 544px;
+	padding-top: 20px;
 }
 
 div[role=masterhead] {
@@ -38,6 +48,7 @@ header {
 		background: url(layout/logo.png) no-repeat left top;
 		text-indent: -99999px;
 		color: transparent;
+		margin-top: 30px;
 	}
 
 	nav {
@@ -53,14 +64,17 @@ header {
 					padding-top: 50px;
 					padding-bottom: 20px;
 					color: #B2B2B2;
-					font-size: 1.2em;
+					font-size: 1.3em;
 					font-weight: 100;
 
 					&:hover {
 						text-decoration: none;
+						background-repeat: no-repeat;
+						background-position: center top;
+						background-size: 50%;
 
 						&.nav-expertise {
-
+							background-image: url(layout/icon_expertise.png);
 						}
 					}
 				}
@@ -70,3 +84,17 @@ header {
 
 }
 
+section#spotlight {
+
+	h1 {
+
+		margin-bottom: 25px;
+
+		& + p {
+			font-size: 1.5em;
+			color: #f15a22;
+		}
+	}
+}
+
+@import "home_widget";

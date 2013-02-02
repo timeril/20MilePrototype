@@ -1,0 +1,50 @@
+section#home-widget {
+
+	position: relative;
+
+	a {
+		@include inline-block;
+		width: 170px;
+		height: 126px;
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 170px 126px;
+
+		position: absolute;
+
+		&#hw-identity-design {
+			background-image: url(layout/mountains.png);
+		}
+		&#hw-online-marketing {
+			background-image: url(layout/island.png);
+		}
+		&#hw-web-design {
+			background-image: url(layout/city.png);
+		}
+		&#hw-web-development {
+			background-image: url(layout/desert.png);
+		}
+
+		&.active {
+			width: 538px;
+			height: 400px;
+			background-size: 538px 400px;
+
+			right: 0px;
+
+			& + a {
+				right: 500px;
+
+				& + a {
+					right: 600px;
+				}
+			}
+		}
+	}
+
+	section {
+	
+		display: none;
+		
+	}
+}
