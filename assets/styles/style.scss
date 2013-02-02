@@ -30,8 +30,6 @@ div[role=home] {
 	background-color: #b2b1ad;
 	background-image: url(layout/topo_bg.png);
 	background-repeat: repeat-x;
-	display: block;
-	min-height: 544px;
 	padding-top: 20px;
 }
 
@@ -68,7 +66,6 @@ header {
 					font-weight: 100;
 
 					&:hover {
-						text-decoration: none;
 						background-repeat: no-repeat;
 						background-position: center top;
 						background-size: 50%;
@@ -85,6 +82,8 @@ header {
 }
 
 section#spotlight {
+
+	min-height: 544px;
 
 	h1 {
 
