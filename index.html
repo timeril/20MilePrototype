@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      link.href = link.href.split('?')[0]+'?'+(new Date()).getTime()
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+
+  	<link rel='stylesheet' href='assets/styles/style.css'>
+
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="assets/favicon.ico" rel="shortcut icon">
+	<link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
+
+  </head>
+
+  <body>
+
+	<!-- HEADER -->
+<div role="masterhead">
+	<div class="container">
+		<header class="row">
+			<div class="span3">
+				<a href="index.html" class="current logo">20Mile Interactive</a>
+			</div>
+			<div class="span9">
+				<nav>
+					<ul>
+						<li><a class="nav-expertise" href="expertise.html"><span>Expertise</span></a></li>
+						<li><a class="nav-results" href="results.html"><span>Results</span></a></li>
+						<li><a class="nav-team" href="team.html"><span>Team</span></a></li>
+						<li><a class="nav-journal" href="journal.html"><span>Journal</span></a></li>
+						<li><a class="nav-contact" href="contact.html"><span>Contact</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+	</div>
+</div>
+
+<!-- CONTENT -->
+
+<div class="row" role="home">
+	<div class="container">
+		<section id="spotlight">
+			<div class="span12">
+				<h1>
+					Friendly, expert guides for <br>
+					navigating an ever-changing digital <br>
+					terrain.
+				</h1>
+
+				<p>Adventurers inquire within.</p>
+			</div>
+		</section>
+		<section id="home-widget">
+			<div id="hw-nav" class="span12 pos1">
+				<a href="pos1" id="hw-identity-design">Identity Design</a>
+				<a href="pos2" id="hw-online-marketing">Online Marketing</a>
+				<a href="pos3" id="hw-web-design">Web Design</a>
+				<a href="pos4" id="hw-web-development">Web Development</a>
+			</div>
+			<div class="span12 pos1">
+				<section id="panel-identity-design">
+					<p>This is the Identity Design Panel</p>
+				</section>
+				<section id="panel-online-marketing">
+					<p>This is the Online Marketing Panel</p>
+				</section>
+				<section id="panel-web-design">
+					<p>This is the Web Design Panel</p>
+				</section>
+				<section id="panel-web-development">
+					<p>This is the AWESOME Web Development Panel</p>
+				</section>
+			</div>
+		</section>
+	</div>
+</div>
+
+  
+
+
+  <script src='assets/js/jquery-1.8.3.min.js'></script>
+  <script src='assets/js/app.js'></script>
+  
+
+</body>
+</html>
