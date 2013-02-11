@@ -5055,7 +5055,13 @@ section#home-widget {
 svg.team_balloon {
   width: 292px;
   height: 215px; }
-  svg.team_balloon .back-strip {
-    fill: #575350; }
-  svg.team_balloon .color-ring {
-    fill: #ccc; }
+  svg.team_balloon .strip .back-strip {
+    fill: #575350;
+    cursor: pointer; }
+  svg.team_balloon .strip .color-ring {
+    fill: pink;
+    cursor: pointer; }
+    svg.team_balloon .strip .color-ring.orange {
+      fill: orange; }
+  svg.team_balloon .bubble-pin {
+    cursor: pointer; }
