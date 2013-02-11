@@ -5051,3 +5051,11 @@ section#home-widget {
     display: none; }
   section#home-widget .pos4 section#panel-web-development {
     display: block; }
+
+svg.team_balloon {
+  width: 292px;
+  height: 215px; }
+  svg.team_balloon .back-strip {
+    fill: #575350; }
+  svg.team_balloon .color-ring {
+    fill: #ccc; }
