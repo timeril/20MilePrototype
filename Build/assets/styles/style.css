@@ -5302,6 +5302,9 @@ a.label:hover, a.badge:hover {
 
 body {
   background-color: #fff; }
+  @media (max-width: 767px) {
+    body {
+      padding: 0px; } }
 
 div[role=masterhead] {
   background-color: #fff; }
@@ -5314,11 +5317,27 @@ div[role=masterhead] {
     text-indent: -99999px;
     color: transparent;
     margin-top: 30px; }
+    @media (max-width: 767px) {
+      div[role=masterhead] header a.logo {
+        width: 275px;
+        height: 100px;
+        background-size: 275px 100px;
+        margin-left: auto;
+        margin-right: auto; } }
   div[role=masterhead] header nav ul {
     list-style: none; }
+    @media (max-width: 767px) {
+      div[role=masterhead] header nav ul {
+        margin: 0;
+        padding: 0; } }
     div[role=masterhead] header nav ul li {
       float: left;
       margin-left: 50px; }
+      @media (max-width: 767px) {
+        div[role=masterhead] header nav ul li {
+          margin-left: 0px;
+          width: 20%;
+          text-align: center; } }
       div[role=masterhead] header nav ul li a {
         display: inline-block;
         vertical-align: baseline;
@@ -5333,7 +5352,8 @@ div[role=masterhead] {
         div[role=masterhead] header nav ul li a:hover {
           background-repeat: no-repeat;
           background-position: center top;
-          background-size: 50%; }
+          background-size: 50%;
+          text-decoration: none; }
           div[role=masterhead] header nav ul li a:hover.nav-expertise {
             background-image: url(layout/icon_expertise.png); }
 
@@ -5342,6 +5362,11 @@ div[role=home] {
   background-image: url(layout/topo_bg.png);
   background-repeat: repeat-x;
   padding-top: 20px; }
+  @media (max-width: 767px) {
+    div[role=home] {
+      padding-left: 20px;
+      padding-right: 20px;
+      background-size: auto 382px; } }
   div[role=home] .home-secondary {
     background-color: #afaeaa; }
     div[role=home] .home-secondary #kayak {
@@ -5367,6 +5392,16 @@ div[role=home] {
       div[role=home] section#spotlight h1 + p {
         font-size: 1.5em;
         color: #f15a22; }
+    @media (max-width: 767px) {
+      div[role=home] section#spotlight {
+        min-height: 644px; }
+        div[role=home] section#spotlight h1 {
+          font-size: 1.8em;
+          line-height: 1.4em;
+          margin-bottom: 25px; }
+          div[role=home] section#spotlight h1 + p {
+            font-size: 1.5em;
+            color: #f15a22; } }
 
 section#home-widget {
   display: block; }
@@ -5382,6 +5417,13 @@ section#home-widget {
       color: #49443e;
       font-size: 2em;
       z-index: 0; }
+      @media (max-width: 767px) {
+        section#home-widget #hw-nav.pos1 a#hw-identity-design {
+          width: 140px;
+          background-size: 140px 104px;
+          top: 0px;
+          left: 33.333%;
+          padding-top: 104px; } }
     section#home-widget #hw-nav.pos1 a#hw-online-marketing {
       width: 140px;
       padding-top: 104.47761px;
@@ -5389,6 +5431,13 @@ section#home-widget {
       top: 20px;
       right: 450px;
       z-index: 2000; }
+      @media (max-width: 767px) {
+        section#home-widget #hw-nav.pos1 a#hw-online-marketing {
+          width: 54px;
+          background-size: 54px 40px;
+          top: 0px;
+          left: 0px;
+          padding-top: 40px; } }
     section#home-widget #hw-nav.pos1 a#hw-web-design {
       width: 150px;
       padding-top: 111.9403px;
@@ -5396,6 +5445,14 @@ section#home-widget {
       top: 90px;
       right: 580px;
       z-index: 2000; }
+      @media (max-width: 767px) {
+        section#home-widget #hw-nav.pos1 a#hw-web-design {
+          width: 54px;
+          background-size: 54px 40px;
+          top: -100px;
+          right: auto;
+          left: 40%;
+          padding-top: 40px; } }
     section#home-widget #hw-nav.pos1 a#hw-web-development {
       width: 170px;
       padding-top: 126.86567px;
@@ -5403,6 +5460,13 @@ section#home-widget {
       top: 220px;
       right: 600px;
       z-index: 2000; }
+      @media (max-width: 767px) {
+        section#home-widget #hw-nav.pos1 a#hw-web-development {
+          width: 54px;
+          background-size: 54px 40px;
+          top: 0px;
+          right: 0px;
+          padding-top: 40px; } }
     section#home-widget #hw-nav.pos2 a#hw-identity-design {
       width: 170px;
       padding-top: 126.86567px;
@@ -5410,6 +5474,13 @@ section#home-widget {
       top: 220px;
       right: 600px;
       z-index: 2000; }
+      @media (max-width: 767px) {
+        section#home-widget #hw-nav.pos2 a#hw-identity-design {
+          width: 54px;
+          background-size: 54px 40px;
+          top: 0px;
+          right: 0px;
+          padding-top: 40px; } }
     section#home-widget #hw-nav.pos2 a#hw-online-marketing {
       width: 536px;
       padding-top: 416px;
@@ -5419,6 +5490,13 @@ section#home-widget {
       color: #49443e;
       font-size: 2em;
       z-index: 0; }
+      @media (max-width: 767px) {
+        section#home-widget #hw-nav.pos2 a#hw-online-marketing {
+          width: 140px;
+          background-size: 140px 104px;
+          top: 0px;
+          left: 33.333%;
+          padding-top: 104px; } }
     section#home-widget #hw-nav.pos2 a#hw-web-design {
       width: 140px;
       padding-top: 104.47761px;
@@ -5426,6 +5504,13 @@ section#home-widget {
       top: 20px;
       right: 450px;
       z-index: 2000; }
+      @media (max-width: 767px) {
+        section#home-widget #hw-nav.pos2 a#hw-web-design {
+          width: 54px;
+          background-size: 54px 40px;
+          top: 0px;
+          left: 0px;
+          padding-top: 40px; } }
     section#home-widget #hw-nav.pos2 a#hw-web-development {
       width: 150px;
       padding-top: 111.9403px;
@@ -5433,6 +5518,14 @@ section#home-widget {
       top: 90px;
       right: 580px;
       z-index: 2000; }
+      @media (max-width: 767px) {
+        section#home-widget #hw-nav.pos2 a#hw-web-development {
+          width: 54px;
+          background-size: 54px 40px;
+          top: -100px;
+          right: auto;
+          left: 40%;
+          padding-top: 40px; } }
     section#home-widget #hw-nav.pos3 a#hw-identity-design {
       width: 150px;
       padding-top: 111.9403px;
@@ -5440,6 +5533,14 @@ section#home-widget {
       top: 90px;
       right: 580px;
       z-index: 2000; }
+      @media (max-width: 767px) {
+        section#home-widget #hw-nav.pos3 a#hw-identity-design {
+          width: 54px;
+          background-size: 54px 40px;
+          top: -100px;
+          right: auto;
+          left: 40%;
+          padding-top: 40px; } }
     section#home-widget #hw-nav.pos3 a#hw-online-marketing {
       width: 170px;
       padding-top: 126.86567px;
@@ -5447,6 +5548,13 @@ section#home-widget {
       top: 220px;
       right: 600px;
       z-index: 2000; }
+      @media (max-width: 767px) {
+        section#home-widget #hw-nav.pos3 a#hw-online-marketing {
+          width: 54px;
+          background-size: 54px 40px;
+          top: 0px;
+          right: 0px;
+          padding-top: 40px; } }
     section#home-widget #hw-nav.pos3 a#hw-web-design {
       width: 536px;
       padding-top: 416px;
@@ -5456,6 +5564,13 @@ section#home-widget {
       color: #49443e;
       font-size: 2em;
       z-index: 0; }
+      @media (max-width: 767px) {
+        section#home-widget #hw-nav.pos3 a#hw-web-design {
+          width: 140px;
+          background-size: 140px 104px;
+          top: 0px;
+          left: 33.333%;
+          padding-top: 104px; } }
     section#home-widget #hw-nav.pos3 a#hw-web-development {
       width: 140px;
       padding-top: 104.47761px;
@@ -5463,6 +5578,13 @@ section#home-widget {
       top: 20px;
       right: 450px;
       z-index: 2000; }
+      @media (max-width: 767px) {
+        section#home-widget #hw-nav.pos3 a#hw-web-development {
+          width: 54px;
+          background-size: 54px 40px;
+          top: 0px;
+          left: 0px;
+          padding-top: 40px; } }
     section#home-widget #hw-nav.pos4 a#hw-identity-design {
       width: 140px;
       padding-top: 104.47761px;
@@ -5470,6 +5592,13 @@ section#home-widget {
       top: 20px;
       right: 450px;
       z-index: 2000; }
+      @media (max-width: 767px) {
+        section#home-widget #hw-nav.pos4 a#hw-identity-design {
+          width: 54px;
+          background-size: 54px 40px;
+          top: 0px;
+          left: 0px;
+          padding-top: 40px; } }
     section#home-widget #hw-nav.pos4 a#hw-online-marketing {
       width: 150px;
       padding-top: 111.9403px;
@@ -5477,6 +5606,14 @@ section#home-widget {
       top: 90px;
       right: 580px;
       z-index: 2000; }
+      @media (max-width: 767px) {
+        section#home-widget #hw-nav.pos4 a#hw-online-marketing {
+          width: 54px;
+          background-size: 54px 40px;
+          top: -100px;
+          right: auto;
+          left: 40%;
+          padding-top: 40px; } }
     section#home-widget #hw-nav.pos4 a#hw-web-design {
       width: 170px;
       padding-top: 126.86567px;
@@ -5484,6 +5621,13 @@ section#home-widget {
       top: 220px;
       right: 600px;
       z-index: 2000; }
+      @media (max-width: 767px) {
+        section#home-widget #hw-nav.pos4 a#hw-web-design {
+          width: 54px;
+          background-size: 54px 40px;
+          top: 0px;
+          right: 0px;
+          padding-top: 40px; } }
     section#home-widget #hw-nav.pos4 a#hw-web-development {
       width: 536px;
       padding-top: 416px;
@@ -5493,6 +5637,13 @@ section#home-widget {
       color: #49443e;
       font-size: 2em;
       z-index: 0; }
+      @media (max-width: 767px) {
+        section#home-widget #hw-nav.pos4 a#hw-web-development {
+          width: 140px;
+          background-size: 140px 104px;
+          top: 0px;
+          left: 33.333%;
+          padding-top: 104px; } }
     section#home-widget #hw-nav a {
       display: inline-block;
       vertical-align: baseline;
@@ -5535,8 +5686,12 @@ section#home-widget {
   section#home-widget #hw-sectional {
     padding-top: 60px;
     position: relative;
-    height: 220px; }
+    min-height: 220px; }
+    @media (max-width: 767px) {
+      section#home-widget #hw-sectional {
+        min-height: 550px; } }
   section#home-widget section {
+    display: inline-block;
     text-align: center;
     font-size: 1.8em;
     line-height: 1.5em;
@@ -5556,6 +5711,9 @@ section#home-widget {
     -ms-transition-timing-function: ease-in;
     -o-transition-timing-function: ease-in;
     transition-timing-function: ease-in; }
+    @media (max-width: 767px) {
+      section#home-widget section {
+        margin-top: 100px; } }
   section#home-widget .pos1 section#panel-identity-design {
     opacity: 1; }
   section#home-widget .pos2 section#panel-online-marketing {

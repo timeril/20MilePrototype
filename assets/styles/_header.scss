@@ -12,15 +12,34 @@ div[role=masterhead] {
 			text-indent: -99999px;
 			color: transparent;
 			margin-top: 30px;
+
+			@media (max-width: $mobile-max-width) { // {}
+				width: 275px;
+				height: 100px;
+				background-size: 275px 100px;
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 
 		nav {
 			ul {
 				list-style: none;
 
+				@media (max-width: $mobile-max-width) { // {}
+					margin: 0;
+					padding: 0;
+				}
+
 				li {
 					float: left;
 					margin-left: 50px;
+
+					@media (max-width: $mobile-max-width) { // {}
+						margin-left: 0px;
+						width: 20%;
+						text-align: center;
+					}
 
 					a {
 						@include inline-block;
@@ -34,6 +53,7 @@ div[role=masterhead] {
 							background-repeat: no-repeat;
 							background-position: center top;
 							background-size: 50%;
+							text-decoration: none;
 
 							&.nav-expertise {
 								background-image: url(layout/icon_expertise.png);

@@ -6,6 +6,10 @@
 
 body {
 	background-color: #fff;
+
+	@media (max-width: $mobile-max-width) {
+		padding: 0px;
+	}//{}
 }
 
 @import "header";

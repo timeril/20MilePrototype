@@ -20,6 +20,14 @@ $pos4-height: 		$icon-full-height / $icon-full-width * $pos4-width;
 	color: #49443e;
 	font-size: 2em;
 	z-index: 0;
+
+	@media (max-width: $mobile-max-width) { // {}
+		width: 140px;
+		background-size: 140px 104px;
+		top: 0px;
+		left: 33.333%;
+		padding-top: 104px;
+	}
 }
 
 @mixin second_position() {
@@ -29,6 +37,14 @@ $pos4-height: 		$icon-full-height / $icon-full-width * $pos4-width;
 	top: 20px;
 	right: 450px;
 	z-index: 2000;
+
+	@media (max-width: $mobile-max-width) { // {}
+		width: 54px;
+		background-size: 54px 40px;
+		top: 0px;
+		left: 0px;
+		padding-top: 40px;
+	}
 }
 
 @mixin third_position() {
@@ -38,6 +54,15 @@ $pos4-height: 		$icon-full-height / $icon-full-width * $pos4-width;
 	top: 90px;
 	right: 580px;
 	z-index: 2000;
+
+	@media (max-width: $mobile-max-width) { // {}
+		width: 54px;
+		background-size: 54px 40px;
+		top: -100px;
+		right: auto;
+		left: 40%;
+		padding-top: 40px;
+	}
 }
 
 @mixin fourth_position() {
@@ -47,6 +72,14 @@ $pos4-height: 		$icon-full-height / $icon-full-width * $pos4-width;
 	top: 220px;
 	right: 600px;
 	z-index: 2000;
+
+	@media (max-width: $mobile-max-width) { // {}
+		width: 54px;
+		background-size: 54px 40px;
+		top: 0px;
+		right: 0px;
+		padding-top: 40px;
+	}
 }
 
 section#home-widget {
@@ -126,10 +159,15 @@ section#home-widget {
 	#hw-sectional {
 		padding-top: 60px;
 		position: relative;
-		height: 220px;
+		min-height: 220px;
+
+		@media (max-width: $mobile-max-width) { // {}
+			min-height: 550px;
+		}
 	}
 
 	section {
+		display: inline-block;
 		text-align: center;
 		font-size: 1.8em;
 		line-height: 1.5em;
@@ -139,6 +177,10 @@ section#home-widget {
 		@include animation-name(opacity);
 		@include transition-duration(.5s);
 		@include transition-timing-function(ease-in);
+
+		@media (max-width: $mobile-max-width) { // {}
+			margin-top: 100px;
+		}
 	}
 
 	.pos1 {
