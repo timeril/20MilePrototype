@@ -21,7 +21,8 @@
                     for (var i = 0; i < links.length;i++) { 
                     var link = links[i]; 
                     if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
-                      link.href = link.href.split('?')[0]+'?'+(new Date()).getTime()
+                      href = link.href.replace(/((&|\?)hammer=)[^\&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
                     }
                   }
                 }

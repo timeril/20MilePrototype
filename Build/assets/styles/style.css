@@ -8,29 +8,29 @@
   font-family: Asap;
   font-weight: normal;
   font-style: normal;
-  src: url(/fonts/asap/Asap-Regular.eot);
-  src: url(/fonts/asap/Asap-Regular.eot?#iefix) format("embedded-opentype"), url(/fonts/asap/Asap-Regular.woff) format("woff"), url(fonts/asap/Asap-Regular.ttf) format("truetype"), url(/fonts/asap/Asap-Regular.svg#Asap) format("svg"); }
+  src: url("/fonts/asap/Asap-Regular.eot");
+  src: url("/fonts/asap/Asap-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/asap/Asap-Regular.woff") format("woff"), url("/fonts/asap/Asap-Regular.ttf") format("truetype"), url("/fonts/asap/Asap-Regular.svg#Asap") format("svg"); }
 
 @font-face {
   font-family: Asap;
   font-weight: bold;
   font-style: normal;
-  src: url(/fonts/asap/Asap-Bold.eot);
-  src: url(/fonts/asap/Asap-Bold.eot?#iefix) format("embedded-opentype"), url(/fonts/asap/Asap-Bold.woff) format("woff"), url(fonts/asap/Asap-Bold.ttf) format("truetype"), url(/fonts/asap/Asap-Bold.svg#Asap) format("svg"); }
+  src: url("/fonts/asap/Asap-Bold.eot");
+  src: url("/fonts/asap/Asap-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/asap/Asap-Bold.woff") format("woff"), url("/fonts/asap/Asap-Bold.ttf") format("truetype"), url("/fonts/asap/Asap-Bold.svg#Asap") format("svg"); }
 
 @font-face {
   font-family: Asap;
   font-weight: normal;
   font-style: italic;
-  src: url(/fonts/asap/Asap-Italic.eot);
-  src: url(/fonts/asap/Asap-Italic.eot?#iefix) format("embedded-opentype"), url(/fonts/asap/Asap-Italic.woff) format("woff"), url(fonts/asap/Asap-Italic.ttf) format("truetype"), url(/fonts/asap/Asap-Italic.svg#Asap) format("svg"); }
+  src: url("/fonts/asap/Asap-Italic.eot");
+  src: url("/fonts/asap/Asap-Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/asap/Asap-Italic.woff") format("woff"), url("/fonts/asap/Asap-Italic.ttf") format("truetype"), url("/fonts/asap/Asap-Italic.svg#Asap") format("svg"); }
 
 @font-face {
   font-family: Asap;
   font-weight: bold;
   font-style: italic;
-  src: url(/fonts/asap/Asap-BoldItalic.eot);
-  src: url(/fonts/asap/Asap-BoldItalic.eot?#iefix) format("embedded-opentype"), url(/fonts/asap/Asap-BoldItalic.woff) format("woff"), url(fonts/asap/Asap-BoldItalic.ttf) format("truetype"), url(/fonts/asap/Asap-BoldItalic.svg#Asap) format("svg"); }
+  src: url("/fonts/asap/Asap-BoldItalic.eot");
+  src: url("/fonts/asap/Asap-BoldItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/asap/Asap-BoldItalic.woff") format("woff"), url("/fonts/asap/Asap-BoldItalic.ttf") format("truetype"), url("/fonts/asap/Asap-BoldItalic.svg#Asap") format("svg"); }
 
 /*
  * Bootstrap v2.2.2
@@ -1752,7 +1752,7 @@ table th[class*="span"],
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url(layout/glyphicons-halflings.png);
+  background-image: url("../img/glyphicons-halflings.png");
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px; }
@@ -1771,7 +1771,7 @@ table th[class*="span"],
 .dropdown-menu > .active > a > [class*=" icon-"],
 .dropdown-submenu:hover > a > [class^="icon-"],
 .dropdown-submenu:hover > a > [class*=" icon-"] {
-  background-image: url(layout/glyphicons-halflings-white.png); }
+  background-image: url("../img/glyphicons-halflings-white.png"); }
 
 .icon-glass {
   background-position: 0 0; }
