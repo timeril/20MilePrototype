@@ -1,0 +1,17 @@
+// Base Styles
+
+* {
+	@include prefixer(font-smoothing, antialiased, webkit moz spec);
+}
+
+body {
+	background-color: #fff;
+}
+
+@import "header";
+
+@import "home_page";
+
+@import "components";
+
+@import "footer";

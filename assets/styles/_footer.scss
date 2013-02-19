@@ -1,0 +1,22 @@
+footer {
+	
+	background: url(layout/topo_bg_footer.png) left top;
+
+	.ribbon {
+		background-color: rgba(0, 0, 0, 0.5);
+
+		section {
+			text-align: center;
+			border-bottom: 1px dashed #3a3937;
+			margin: 0px 5px;
+
+			&.social {
+				background-image: url(svgs/triangle.svg);
+				background-repeat: no-repeat;
+				background-position: center top;
+				background-size: 140px 20px;
+				padding-top: 30px;
+			}
+		}
+	}
+}

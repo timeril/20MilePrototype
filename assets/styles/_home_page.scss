@@ -1,0 +1,64 @@
+div[role=home] {
+	background-color: #b2b1ad;
+	background-image: url(layout/topo_bg.png);
+	background-repeat: repeat-x;
+	padding-top: 20px;
+
+	.home-secondary {
+		background-color: #afaeaa;
+
+		#kayak {
+
+			margin-top: -40px;
+			
+			#hull {
+				fill: #76BEE9;
+			}
+
+			#right-nose {
+				fill: #F15B24;
+			}
+
+			#left-nose {
+				fill: #A5CE39;
+			}
+			
+			#top-hull {
+				opacity: 0.2; 
+				fill: #01758C;
+			}
+
+			#hole {
+				fill: #01758C;
+			}
+		}
+
+		.span4 {
+			article {
+				header {
+					h1 {
+						font-size: 1.4em;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	section#spotlight {
+
+		min-height: 544px;
+
+		h1 {
+
+			margin-bottom: 25px;
+
+			& + p {
+				font-size: 1.5em;
+				color: #f15a22;
+			}
+		}
+	}
+}
+
+@import "home_widget";

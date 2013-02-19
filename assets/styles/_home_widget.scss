@@ -1,4 +1,4 @@
-$icon-full-width: 	538px;
+$icon-full-width: 	536px;
 $icon-full-height: 	400px;
 
 $pos1-width: 		$icon-full-width;
@@ -13,7 +13,7 @@ $pos4-height: 		$icon-full-height / $icon-full-width * $pos4-width;
 
 @mixin first_position() {
 	width: $pos1-width;
-	padding-top: $pos1-height + 10px;
+	padding-top: $pos1-height + 16px;
 	background-size: $pos1-width $pos1-height;
 	right: 0px;
 	top: 0px;
@@ -24,7 +24,7 @@ $pos4-height: 		$icon-full-height / $icon-full-width * $pos4-width;
 
 @mixin second_position() {
 	width: $pos2-width;
-	padding-top: $pos2-height - 10px;
+	padding-top: $pos2-height;
 	background-size: $pos2-width $pos2-height;
 	top: 20px;
 	right: 450px;
@@ -42,7 +42,7 @@ $pos4-height: 		$icon-full-height / $icon-full-width * $pos4-width;
 
 @mixin fourth_position() {
 	width: $pos4-width;
-	padding-top: $pos4-height - 10px;
+	padding-top: $pos4-height;
 	background-size: $pos4-width $pos4-height;
 	top: 220px;
 	right: 600px;
@@ -96,6 +96,8 @@ section#home-widget {
 			@include transition-duration(.5s);
 			@include transition-timing-function(ease-in);
 
+			@include prefixer(user-select, none, webkit moz spec);
+
 			color: #B2B2B2;
 			font-size: 1.2em;
 			font-style: italic;
@@ -121,38 +123,45 @@ section#home-widget {
 		}
 	}
 
+	#hw-sectional {
+		padding-top: 60px;
+		position: relative;
+		height: 220px;
+	}
+
 	section {
-		@include animation-name(display);
+		text-align: center;
+		font-size: 1.8em;
+		line-height: 1.5em;
+		color: #fff;
+		opacity: 0;
+		position: absolute;
+		@include animation-name(opacity);
 		@include transition-duration(.5s);
 		@include transition-timing-function(ease-in);
 	}
 
 	.pos1 {
-		section#panel-identity-design{ display: block; }
-		section#panel-online-marketing { display: none; }
-		section#panel-web-design { display: none; }
-		section#panel-web-development { display: none; }
+		section#panel-identity-design{ 
+			opacity: 1;
+		}
 	}
 
 	.pos2 {
-		section#panel-identity-design{ display: none; }
-		section#panel-online-marketing { display: block; }
-		section#panel-web-design { display: none; }
-		section#panel-web-development { display: none; }
+		section#panel-online-marketing {
+			opacity: 1;
+		}
 	}
 
 	.pos3 {
-		section#panel-identity-design{ display: none; }
-		section#panel-online-marketing { display: none; }
-		section#panel-web-design { display: block; }
-		section#panel-web-development { display: none; }
+		section#panel-web-design { 
+			opacity: 1;
+		}
 	}
 
 	.pos4 {
-		section#panel-identity-design{ display: none; }
-		section#panel-online-marketing { display: none; }
-		section#panel-web-design { display: none; }
-		section#panel-web-development { display: block; }
+		section#panel-web-development { 
+			opacity: 1;
+		}
 	}
-
 }

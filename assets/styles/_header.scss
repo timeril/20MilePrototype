@@ -1,0 +1,48 @@
+div[role=masterhead] {
+	background-color: #fff;
+
+	header {
+
+		a.logo {
+			display: block;
+			width: 165px;
+			height: 60px;
+			background: url(svgs/20MileLogo.svg) no-repeat left top;
+			background-size: 165px 60px;
+			text-indent: -99999px;
+			color: transparent;
+			margin-top: 30px;
+		}
+
+		nav {
+			ul {
+				list-style: none;
+
+				li {
+					float: left;
+					margin-left: 50px;
+
+					a {
+						@include inline-block;
+						padding-top: 50px;
+						padding-bottom: 20px;
+						color: #B2B2B2;
+						font-size: 1.3em;
+						font-weight: 100;
+
+						&:hover {
+							background-repeat: no-repeat;
+							background-position: center top;
+							background-size: 50%;
+
+							&.nav-expertise {
+								background-image: url(layout/icon_expertise.png);
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+}
