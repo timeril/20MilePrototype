@@ -5,11 +5,31 @@
  * Notes: I am using Twitter Bootstrap and Bourbon (bourbon.io)
  */
 
-@include font-face(Asap, '/fonts/asap/Asap-Regular');
-@include font-face(Asap, '/fonts/asap/Asap-Bold', bold);
-@include font-face(Asap, '/fonts/asap/Asap-Italic', normal, italic);
-@include font-face(Asap, '/fonts/asap/Asap-BoldItalic', bold, italic);
+@font-face {
+    font-family: DeliciousRoman;
+    src: url(fonts/asap/Asap-Regular.ttf);
+    font-weight:400;
+}
 
+@font-face {
+    font-family: DeliciousRoman;
+    src: url(fonts/asap/Asap-Bold.ttf);
+    font-weight:700;
+}
+
+@font-face {
+    font-family: DeliciousRoman;
+    src: url(fonts/asap/Asap-BoldItalic.ttf);
+    font-weight:700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: DeliciousRoman;
+    src: url(fonts/asap/Asap-Italic.ttf);
+    font-weight:400;
+    font-style: italic;
+}
 
 // Set variables
 $headingsFontWeight: 	normal;

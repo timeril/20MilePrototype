@@ -7,16 +7,17 @@ div[role=home] {
 	@media (max-width: $mobile-max-width) { // {}
 		padding-left: 20px;
 		padding-right: 20px;
-		background-size: auto 282px;
+		background-size: auto 300px;
 	}
 
 	.home-secondary {
 		background-color: #afaeaa;
+		padding-bottom: 30px;
 
 		#kayak {
 
 			margin-top: -40px;
-			
+
 			#hull {
 				fill: #76BEE9;
 			}
@@ -28,9 +29,9 @@ div[role=home] {
 			#left-nose {
 				fill: #A5CE39;
 			}
-			
+
 			#top-hull {
-				opacity: 0.2; 
+				opacity: 0.2;
 				fill: #01758C;
 			}
 
@@ -47,17 +48,79 @@ div[role=home] {
 						text-align: center;
 					}
 				}
+
+				p, h3 {
+					color: #FFF;
+					text-align: center;
+				}
+
+				p {
+					font-size: 1.2em;
+				}
+
+				&.recent-results {
+
+					.imac-frame {
+						margin: auto;
+						width: 300px;
+						background: url(layout/imac.png) no-repeat left top;
+						padding: 12px 12px 60px 12px;
+
+						@media (max-width: $mobile-max-width) { // {}
+							width: 280px;
+							background-size: 280px;
+						}
+
+						.snapshot {
+							display: block;
+							width: 276px;
+							height: 153px;
+							overflow: hidden;
+
+							@media (max-width: $mobile-max-width) { // {}
+								width: 256px;
+							}
+						}
+					}
+
+					a {
+						font-style: italic;
+						color: #F05921;
+					}
+				}
+
+				&.from-the-journal {
+
+					padding: 0px 10px;
+					h3 {
+						line-height: 1.3em;
+					}
+				}
+
+				&.from-twitter {
+					padding: 0px 10px;
+
+					p {
+						word-wrap: break-word;
+					}
+				}
 			}
 		}
 	}
 
 	section#spotlight {
 
-		min-height: 544px;
+		min-height: 534px;
 
 		h1 {
 
 			margin-bottom: 25px;
+
+			@media (max-width: $mobile-max-width) { // {}
+				br {
+					display: none;
+				}
+			}
 
 			& + p {
 				font-size: 1.5em;
@@ -67,7 +130,7 @@ div[role=home] {
 
 		@media (max-width: $mobile-max-width) { // {}
 
-			min-height: 644px;
+			min-height: 640px;
 
 			h1 {
 				font-size: 1.8em;
