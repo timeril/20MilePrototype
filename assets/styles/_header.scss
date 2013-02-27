@@ -13,7 +13,7 @@ div[role=masterhead] {
 			color: transparent;
 			margin-top: 30px;
 
-			@media (max-width: $mobile-max-width) { // {}
+			@include mobile-only {
 				width: 275px;
 				height: 100px;
 				background-size: 275px 100px;
@@ -26,7 +26,7 @@ div[role=masterhead] {
 			ul {
 				list-style: none;
 
-				@media (max-width: $mobile-max-width) { // {}
+				@include mobile-only {
 					margin: 0;
 					padding: 0;
 				}
@@ -35,7 +35,7 @@ div[role=masterhead] {
 					float: left;
 					margin-left: 50px;
 
-					@media (max-width: $mobile-max-width) { // {}
+					@include mobile-only {
 						margin-left: 8px;
 						width: auto;
 					}
@@ -55,7 +55,11 @@ div[role=masterhead] {
 							text-decoration: none;
 
 							&.nav-expertise {
-								background-image: url(layout/icon_expertise.png);
+								background-image: url(layout/ico-expertise-h1.png);
+
+								@include retina {
+									background-image: url(layout/ico-expertise-h1@2x.png);
+								}
 							}
 						}
 					}

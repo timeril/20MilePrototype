@@ -59,54 +59,54 @@ section#home-widget {
 		position: relative;
 		margin-top: -400px;
 		
-		@media (max-width: $mobile-max-width) { // {}
+		@include mobile-only {
 			margin-top: -480px;	
 		}
 
 		&.pos1 {
-			@media (min-width: $mobile-max-width + 1) { // {}
+			@include mobile-portrait-and-up {
 				a#hw-identity-design{ @include first_position(); }
 				a#hw-online-marketing { @include second_position(); }
 				a#hw-web-design { @include third_position(); }
 				a#hw-web-development { @include fourth_position(); }
 			}
-			@media (max-width: $mobile-max-width) { // {}
+			@include mobile-only {
 				a#hw-identity-design { @include prefixer(filter, grayscale(0%), webkit moz ms o); }
 			}
 		}
 
 		&.pos2 {
-			@media (min-width: $mobile-max-width + 1) { // {}
+			@include mobile-portrait-and-up {
 				a#hw-identity-design{ @include fourth_position(); }
 				a#hw-online-marketing { @include first_position(); }
 				a#hw-web-design { @include second_position(); }
 				a#hw-web-development { @include third_position(); }
 			}
-			@media (max-width: $mobile-max-width) { // {}
+			@include mobile-only {
 				a#hw-online-marketing { @include prefixer(filter, grayscale(0%), webkit moz ms o); }
 			}
 		}
 
 		&.pos3 {
-			@media (min-width: $mobile-max-width + 1) { // {}
+			@include mobile-portrait-and-up {
 				a#hw-identity-design{ @include third_position(); }
 				a#hw-online-marketing { @include fourth_position(); }
 				a#hw-web-design { @include first_position(); }
 				a#hw-web-development { @include second_position(); }
 			}
-			@media (max-width: $mobile-max-width) { // {}
+			@include mobile-only {
 				a#hw-web-design { @include prefixer(filter, grayscale(0%), webkit moz ms o); }
 			}
 		}
 
 		&.pos4 {
-			@media (min-width: $mobile-max-width + 1) { // {}
+			@include mobile-portrait-and-up {
 				a#hw-identity-design{ @include second_position(); }
 				a#hw-online-marketing { @include third_position(); }
 				a#hw-web-design { @include fourth_position(); }
 				a#hw-web-development { @include first_position(); }
 			}
-			@media (max-width: $mobile-max-width) { // {}
+			@include mobile-only {
 				a#hw-web-development { @include prefixer(filter, grayscale(0%), webkit moz ms o); }
 			}
 		}
@@ -129,7 +129,7 @@ section#home-widget {
 
 			position: absolute;
 
-			@media (max-width: $mobile-max-width) { // {}
+			@include mobile-only {
 				@include prefixer(filter, grayscale(100%), webkit moz ms o);
 				width: 70px;
 				padding-top: 60px;
@@ -146,25 +146,25 @@ section#home-widget {
 
 			&#hw-identity-design {
 				background-image: url(layout/mountains.png);
-				@media (max-width: $mobile-max-width) { // {}
+				@include mobile-only {
 					left: 0px;
 				}
 			}
 			&#hw-online-marketing {
 				background-image: url(layout/island.png);
-				@media (max-width: $mobile-max-width) { // {}
+				@include mobile-only {
 					left: 25%;
 				}
 			}
 			&#hw-web-design {
 				background-image: url(layout/city.png);
-				@media (max-width: $mobile-max-width) { // {}
+				@include mobile-only {
 					left: 50%;
 				}
 			}
 			&#hw-web-development {
 				background-image: url(layout/desert.png);
-				@media (max-width: $mobile-max-width) { // {}
+				@include mobile-only {
 					left: 75%;
 				}
 			}
@@ -176,7 +176,7 @@ section#home-widget {
 		position: relative;
 		min-height: 220px;
 
-		@media (max-width: $mobile-max-width) { // {}
+		@include mobile-only {
 			min-height: 550px;
 			padding-top: 100px;
 		}

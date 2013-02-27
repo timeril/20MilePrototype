@@ -35,11 +35,8 @@
 $headingsFontWeight: 	normal;
 $sansFontFamily:        Asap, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-$mobile-max-width: 767px;
-
-
 @import "bootstrap/bootstrap";
 @import "bootstrap/responsive";
 
-
+@import "mixins";
 @import "base";

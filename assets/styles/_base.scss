@@ -7,9 +7,9 @@
 body {
 	background-color: #fff;
 
-	@media (max-width: $mobile-max-width) {
+	@include mobile-only {
 		padding: 0px;
-	}//{}
+	}
 }
 
 @import "header";
