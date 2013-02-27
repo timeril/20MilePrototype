@@ -64,7 +64,7 @@ section#home-widget {
 		}
 
 		&.pos1 {
-			@include mobile-portrait-and-up {
+			@include tablet-portrait-and-up {
 				a#hw-identity-design{ @include first_position(); }
 				a#hw-online-marketing { @include second_position(); }
 				a#hw-web-design { @include third_position(); }
@@ -76,7 +76,7 @@ section#home-widget {
 		}
 
 		&.pos2 {
-			@include mobile-portrait-and-up {
+			@include tablet-portrait-and-up {
 				a#hw-identity-design{ @include fourth_position(); }
 				a#hw-online-marketing { @include first_position(); }
 				a#hw-web-design { @include second_position(); }
@@ -88,7 +88,7 @@ section#home-widget {
 		}
 
 		&.pos3 {
-			@include mobile-portrait-and-up {
+			@include tablet-portrait-and-up {
 				a#hw-identity-design{ @include third_position(); }
 				a#hw-online-marketing { @include fourth_position(); }
 				a#hw-web-design { @include first_position(); }
@@ -100,7 +100,7 @@ section#home-widget {
 		}
 
 		&.pos4 {
-			@include mobile-portrait-and-up {
+			@include tablet-portrait-and-up {
 				a#hw-identity-design{ @include second_position(); }
 				a#hw-online-marketing { @include third_position(); }
 				a#hw-web-design { @include fourth_position(); }
@@ -190,32 +190,35 @@ section#home-widget {
 		line-height: 1.5em;
 		color: #fff;
 		opacity: 0;
+		visibility: hidden;
+		@include transition (opacity 0.5s linear .5s);
 		position: absolute;
-		@include animation-name(opacity);
-		@include transition-duration(.5s);
-		@include transition-timing-function(ease-in);
 	}
 
 	.pos1 {
 		section#panel-identity-design{ 
+			visibility: visible;
 			opacity: 1;
 		}
 	}
 
 	.pos2 {
 		section#panel-online-marketing {
+			visibility: visible;
 			opacity: 1;
 		}
 	}
 
 	.pos3 {
 		section#panel-web-design { 
+			visibility: visible;
 			opacity: 1;
 		}
 	}
 
 	.pos4 {
 		section#panel-web-development { 
+			visibility: visible;
 			opacity: 1;
 		}
 	}
