@@ -43,9 +43,10 @@ div[role=home] {
 		.span4 {
 			article {
 				header {
+					text-align: center;
 					h1 {
+						display: inline-block;
 						font-size: 1.4em;
-						text-align: center;
 					}
 				}
 
@@ -91,6 +92,20 @@ div[role=home] {
 
 				&.from-the-journal {
 
+					header {
+						h1 {
+							background-image: url(layout/ico-journal-sm.png);
+							background-repeat: no-repeat;
+							background-position: left center;
+							background-size: 18px 22px;
+							padding-left: 30px;
+
+							@include retina {
+								background-image: url(layout/ico-journal-sm@2x.png);
+							}
+						}
+					}
+
 					padding: 0px 10px;
 					h3 {
 						line-height: 1.3em;
@@ -99,6 +114,20 @@ div[role=home] {
 
 				&.from-twitter {
 					padding: 0px 10px;
+
+					header {
+						h1 {
+							background-image: url(layout/twitter-footer.png);
+							background-repeat: no-repeat;
+							background-size: 18px 15px;
+							background-position: left center;
+							padding-left: 40px;
+
+							@include retina {
+								background-image: url(layout/twitter-footer@2x.png);
+							}
+						}
+					}
 
 					p {
 						word-wrap: break-word;

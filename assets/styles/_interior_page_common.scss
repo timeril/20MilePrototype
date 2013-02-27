@@ -1,0 +1,43 @@
+
+.page-title {
+	background-color: #b2b1ad;
+	background-image: url(layout/topo_bg.png);
+	background-repeat: repeat-x;
+
+	header {
+		text-align: center;
+
+		h1 {
+			display: inline-block;
+			background-repeat: no-repeat;
+			font-size: 5em;
+			padding-top: 30px;
+			padding-bottom: 30px;
+
+			&.expertise  {
+				background-image: url(layout/ico-expertise-h1.png); 
+				background-size: 61px 62px;
+				background-position: left 13px;
+				padding-left: 75px;
+			}
+		}
+	}
+}
+
+.page-body {
+	background-color: #afaeaa;
+
+	.intro-text {
+
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		h3 {
+			color: #fff;
+			font-size: 3em;
+			text-align: center;
+		}
+	}
+}
+
+@import "expertise_page";

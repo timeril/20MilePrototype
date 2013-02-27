@@ -5405,9 +5405,11 @@ div[role=home] {
         fill: #01758C; }
       div[role=home] .home-secondary #kayak #hole {
         fill: #01758C; }
-    div[role=home] .home-secondary .span4 article header h1 {
-      font-size: 1.4em;
+    div[role=home] .home-secondary .span4 article header {
       text-align: center; }
+      div[role=home] .home-secondary .span4 article header h1 {
+        display: inline-block;
+        font-size: 1.4em; }
     div[role=home] .home-secondary .span4 article p, div[role=home] .home-secondary .span4 article h3 {
       color: #FFF;
       text-align: center; }
@@ -5435,10 +5437,28 @@ div[role=home] {
       color: #F05921; }
     div[role=home] .home-secondary .span4 article.from-the-journal {
       padding: 0px 10px; }
+      div[role=home] .home-secondary .span4 article.from-the-journal header h1 {
+        background-image: url(layout/ico-journal-sm.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 18px 22px;
+        padding-left: 30px; }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          div[role=home] .home-secondary .span4 article.from-the-journal header h1 {
+            background-image: url(layout/ico-journal-sm@2x.png); } }
       div[role=home] .home-secondary .span4 article.from-the-journal h3 {
         line-height: 1.3em; }
     div[role=home] .home-secondary .span4 article.from-twitter {
       padding: 0px 10px; }
+      div[role=home] .home-secondary .span4 article.from-twitter header h1 {
+        background-image: url(layout/twitter-footer.png);
+        background-repeat: no-repeat;
+        background-size: 18px 15px;
+        background-position: left center;
+        padding-left: 40px; }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          div[role=home] .home-secondary .span4 article.from-twitter header h1 {
+            background-image: url(layout/twitter-footer@2x.png); } }
       div[role=home] .home-secondary .span4 article.from-twitter p {
         word-wrap: break-word; }
   div[role=home] section#spotlight {
@@ -5787,3 +5807,113 @@ footer {
         padding-bottom: 30px; } }
     footer .jobs-ticker a {
       color: #F05921; }
+
+.page-title {
+  background-color: #b2b1ad;
+  background-image: url(layout/topo_bg.png);
+  background-repeat: repeat-x; }
+  .page-title header {
+    text-align: center; }
+    .page-title header h1 {
+      display: inline-block;
+      background-repeat: no-repeat;
+      font-size: 5em;
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      .page-title header h1.expertise {
+        background-image: url(layout/ico-expertise-h1.png);
+        background-size: 61px 62px;
+        background-position: left 13px;
+        padding-left: 75px; }
+
+.page-body {
+  background-color: #afaeaa; }
+  .page-body .intro-text {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .page-body .intro-text h3 {
+      color: #fff;
+      font-size: 3em;
+      text-align: center; }
+
+#expertise-widget {
+  background: url(layout/path.png) no-repeat center top;
+  padding-bottom: 200px; }
+
+.expertise-widget-journal {
+  text-align: right; }
+  .expertise-widget-journal a {
+    color: #fff;
+    padding: 10px 0px 10px 26px;
+    background-image: url(layout/ico-journal-sm.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 18px 22px; }
+
+.expertise-widget-detail {
+  height: 207px;
+  margin-bottom: 10px; }
+  .expertise-widget-detail .expertise-widget-detail-block {
+    display: inline-block; }
+  .expertise-widget-detail .expertise-widget-icon {
+    background-color: #EDECE8;
+    width: 290px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 207px;
+    float: left; }
+    .even .expertise-widget-detail .expertise-widget-icon {
+      float: right; }
+  .expertise-widget-detail .expertise-widget-description {
+    background-color: #EDECE8;
+    width: 330px;
+    height: 207px;
+    padding-right: 20px;
+    float: left; }
+    .even .expertise-widget-detail .expertise-widget-description {
+      padding-right: 0px;
+      padding-left: 20px; }
+  .expertise-widget-detail .expertise-widget-blockquote {
+    width: 240px;
+    height: 207px;
+    float: right;
+    background-color: #00748B; }
+    .expertise-widget-detail .expertise-widget-blockquote ul {
+      list-style: none;
+      margin: 20px 0px 0px 20px;
+      padding: 0px; }
+      .expertise-widget-detail .expertise-widget-blockquote ul li {
+        color: #fff;
+        font-size: 1.4em;
+        margin-bottom: 5px; }
+    .even .expertise-widget-detail .expertise-widget-blockquote {
+      float: left; }
+
+.odd, .even {
+  margin-top: 100px; }
+
+div.expertise-widget-image {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  margin-top: -44px; }
+  div.expertise-widget-image.id-design-img {
+    width: 290px;
+    height: 215px;
+    background-size: 290px 215px;
+    background-image: url(layout/iddesign-med.png); }
+  div.expertise-widget-image.web-design-img {
+    width: 290px;
+    height: 215px;
+    background-size: 290px 193px;
+    background-image: url(layout/webdesign-med.png); }
+  div.expertise-widget-image.web-development-img {
+    width: 290px;
+    height: 215px;
+    background-size: 290px 165px;
+    background-image: url(layout/webdev-med.png); }
+  div.expertise-widget-image.online-marketing-img {
+    width: 290px;
+    height: 215px;
+    background-size: 290px 167px;
+    background-image: url(layout/onlinemarketing-med.png); }
