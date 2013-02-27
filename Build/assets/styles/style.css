@@ -5345,13 +5345,33 @@ div[role=masterhead] {
         div[role=masterhead] header nav ul li a:hover {
           background-repeat: no-repeat;
           background-position: center top;
-          background-size: 50%;
+          background-size: 40px;
           text-decoration: none; }
-          div[role=masterhead] header nav ul li a:hover.nav-expertise {
-            background-image: url(layout/ico-expertise-h1.png); }
-            @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-              div[role=masterhead] header nav ul li a:hover.nav-expertise {
-                background-image: url(layout/ico-expertise-h1@2x.png); } }
+      div[role=masterhead] header nav ul li.nav-expertise a:hover {
+        background-image: url(layout/icon_expertise.png); }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          div[role=masterhead] header nav ul li.nav-expertise a:hover {
+            background-image: url(layout/ico-expertise-h1@2x.png); } }
+      div[role=masterhead] header nav ul li.nav-results a:hover {
+        background-image: url(layout/ico-expertise-h1.png); }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          div[role=masterhead] header nav ul li.nav-results a:hover {
+            background-image: url(layout/ico-expertise-h1@2x.png); } }
+      div[role=masterhead] header nav ul li.nav-team a:hover {
+        background-image: url(layout/ico-expertise-h1.png); }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          div[role=masterhead] header nav ul li.nav-team a:hover {
+            background-image: url(layout/ico-expertise-h1@2x.png); } }
+      div[role=masterhead] header nav ul li.nav-journal a:hover {
+        background-image: url(layout/ico-expertise-h1.png); }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          div[role=masterhead] header nav ul li.nav-journal a:hover {
+            background-image: url(layout/ico-expertise-h1@2x.png); } }
+      div[role=masterhead] header nav ul li.nav-contact a:hover {
+        background-image: url(layout/ico-expertise-h1.png); }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          div[role=masterhead] header nav ul li.nav-contact a:hover {
+            background-image: url(layout/ico-expertise-h1@2x.png); } }
 
 div[role=home] {
   background-color: #b2b1ad;

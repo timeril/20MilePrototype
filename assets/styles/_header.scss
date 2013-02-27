@@ -51,15 +51,52 @@ div[role=masterhead] {
 						&:hover {
 							background-repeat: no-repeat;
 							background-position: center top;
-							background-size: 50%;
+							background-size: 40px;
 							text-decoration: none;
+						}
+					}
 
-							&.nav-expertise {
-								background-image: url(layout/ico-expertise-h1.png);
+					&.nav-expertise {
+						a:hover {
+							background-image: url(layout/icon_expertise.png);
+							@include retina {
+								background-image: url(layout/ico-expertise-h1@2x.png);
+							}
+						}
+					}
 
-								@include retina {
-									background-image: url(layout/ico-expertise-h1@2x.png);
-								}
+					&.nav-results {
+						a:hover {
+							background-image: url(layout/ico-expertise-h1.png);
+							@include retina {
+								background-image: url(layout/ico-expertise-h1@2x.png);
+							}
+						}
+					}
+
+					&.nav-team {
+						a:hover {
+							background-image: url(layout/ico-expertise-h1.png);
+							@include retina {
+								background-image: url(layout/ico-expertise-h1@2x.png);
+							}
+						}
+					}
+
+					&.nav-journal {
+						a:hover {
+							background-image: url(layout/ico-expertise-h1.png);
+							@include retina {
+								background-image: url(layout/ico-expertise-h1@2x.png);
+							}
+						}
+					}
+
+					&.nav-contact {
+						a:hover {
+							background-image: url(layout/ico-expertise-h1.png);
+							@include retina {
+								background-image: url(layout/ico-expertise-h1@2x.png);
 							}
 						}
 					}
