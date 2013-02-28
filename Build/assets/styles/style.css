@@ -3996,19 +3996,15 @@ input[type="submit"].btn {
 
 .modal {
   position: fixed;
-  top: 50%;
+  top: 30%;
   left: 50%;
   z-index: 1050;
-  width: 560px;
-  margin: -250px 0 0 -280px;
-  background-color: white;
-  border: 1px solid #999999;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  *border: 1px solid #999999;
+  width: 780px;
+  margin: -250px 0 0 -390px;
+  background-color: black;
+  border: 0px;
+  *border: 0px solid #999999;
   /* IE6-7 */
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
@@ -4026,35 +4022,26 @@ input[type="submit"].btn {
     top: 50%; }
 
 .modal-header {
-  padding: 9px 15px;
-  border-bottom: 1px solid #eeeeee; }
+  padding: 5px 10px 8px 10px;
+  border-bottom: 0px solid #eeeeee;
+  background-color: #66615B; }
   .modal-header .close {
-    margin-top: 2px; }
-  .modal-header h3 {
-    margin: 0;
-    line-height: 30px; }
+    margin-top: 0px; }
 
 .modal-body {
   position: relative;
-  overflow-y: auto;
-  max-height: 400px;
-  padding: 15px; }
+  padding: 0px;
+  text-align: center; }
 
 .modal-form {
   margin-bottom: 0; }
 
 .modal-footer {
-  padding: 14px 15px 15px;
+  padding: 0px;
   margin-bottom: 0;
   text-align: right;
   background-color: #f5f5f5;
-  border-top: 1px solid #dddddd;
-  -webkit-border-radius: 0 0 6px 6px;
-  -moz-border-radius: 0 0 6px 6px;
-  border-radius: 0 0 6px 6px;
-  -webkit-box-shadow: inset 0 1px 0 white;
-  -moz-box-shadow: inset 0 1px 0 white;
-  box-shadow: inset 0 1px 0 white;
+  border-top: 0px solid #dddddd;
   *zoom: 1; }
   .modal-footer:before, .modal-footer:after {
     display: table;
@@ -5751,61 +5738,61 @@ svg.team_balloon {
   svg.team_balloon .bubble-pin {
     cursor: pointer; }
 
-footer {
+footer[role=masterfooter] {
   background: url(layout/topo_bg_footer.png) left top; }
-  footer .footer-nav {
+  footer[role=masterfooter] .footer-nav {
     padding-top: 80px; }
-    footer .footer-nav ul {
+    footer[role=masterfooter] .footer-nav ul {
       list-style: none; }
-      footer .footer-nav ul li {
+      footer[role=masterfooter] .footer-nav ul li {
         float: left;
         width: 50%;
         margin-bottom: 10px; }
-        footer .footer-nav ul li a {
+        footer[role=masterfooter] .footer-nav ul li a {
           color: #7A7873;
           font-size: 1.4em; }
-  footer .ribbon {
+  footer[role=masterfooter] .ribbon {
     background-color: rgba(0, 0, 0, 0.5); }
-    footer .ribbon section {
+    footer[role=masterfooter] .ribbon section {
       text-align: center;
       border-bottom: 1px dashed #3a3937;
       margin: 0px 5px; }
-      footer .ribbon section.social {
+      footer[role=masterfooter] .ribbon section.social {
         background-image: url(svgs/triangle.svg);
         background-repeat: no-repeat;
         background-position: center top;
         background-size: 140px 20px;
         padding: 50px 0px 30px 0px; }
-      footer .ribbon section.phone-number {
+      footer[role=masterfooter] .ribbon section.phone-number {
         padding: 20px 0px 10px 0px; }
-        footer .ribbon section.phone-number a {
+        footer[role=masterfooter] .ribbon section.phone-number a {
           font-size: 3.3em;
           color: #fff; }
-      footer .ribbon section.email {
+      footer[role=masterfooter] .ribbon section.email {
         padding: 30px 0px 20px 0px; }
-        footer .ribbon section.email a {
+        footer[role=masterfooter] .ribbon section.email a {
           font-size: 2.9em;
           color: #F05921; }
-      footer .ribbon section.office-location {
+      footer[role=masterfooter] .ribbon section.office-location {
         padding: 30px 0px 20px 0px;
         border-bottom: 0px; }
-        footer .ribbon section.office-location a {
+        footer[role=masterfooter] .ribbon section.office-location a {
           font-size: 1.6em;
           color: #fff; }
-      footer .ribbon section.copyright {
+      footer[role=masterfooter] .ribbon section.copyright {
         color: #7A7873;
         border-bottom: 0px;
         padding-bottom: 30px; }
-  footer .jobs-ticker {
+  footer[role=masterfooter] .jobs-ticker {
     padding-top: 80px;
     color: #7A7873;
     text-align: center;
     font-size: 1.4em; }
     @media (max-width: 480px) {
-      footer .jobs-ticker {
+      footer[role=masterfooter] .jobs-ticker {
         padding-top: 30px;
         padding-bottom: 30px; } }
-    footer .jobs-ticker a {
+    footer[role=masterfooter] .jobs-ticker a {
       color: #F05921; }
 
 .page-title {
@@ -5825,6 +5812,17 @@ footer {
         background-size: 61px 62px;
         background-position: left 13px;
         padding-left: 75px; }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          .page-title header h1.expertise {
+            background-image: url(layout/ico-expertise-h1@2x.png); } }
+      .page-title header h1.results {
+        background-image: url(layout/ico-results-h1.png);
+        background-size: 46px 49px;
+        background-position: left 29px;
+        padding-left: 55px; }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          .page-title header h1.results {
+            background-image: url(layout/ico-results-h1@2x.png); } }
 
 .page-body {
   background-color: #afaeaa; }
@@ -5917,3 +5915,224 @@ div.expertise-widget-image {
     height: 215px;
     background-size: 290px 167px;
     background-image: url(layout/onlinemarketing-med.png); }
+
+.result-item {
+  *zoom: 1;
+  margin-bottom: 80px; }
+  .result-item:before, .result-item:after {
+    display: table;
+    content: "";
+    line-height: 0; }
+  .result-item:after {
+    clear: both; }
+  .result-item .result-screens {
+    width: 379px;
+    float: left; }
+    .result-item .result-screens .top {
+      *zoom: 1;
+      display: block;
+      width: 379px;
+      height: 134px;
+      margin-bottom: 20px; }
+      .result-item .result-screens .top:before, .result-item .result-screens .top:after {
+        display: table;
+        content: "";
+        line-height: 0; }
+      .result-item .result-screens .top:after {
+        clear: both; }
+      .result-item .result-screens .top .mobile-screen {
+        float: right;
+        margin-right: 24px;
+        margin-top: 67px;
+        display: block;
+        width: 43px;
+        height: 67px;
+        background-image: url(layout/iphone-lg.png);
+        background-size: 43px 67px;
+        background-repeat: no-repeat;
+        background-position: left top; }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          .result-item .result-screens .top .mobile-screen {
+            background-image: url(layout/iphone-lg@2x.png); } }
+        .result-item .result-screens .top .mobile-screen .snapshot {
+          padding: 6px; }
+      .result-item .result-screens .top .tablet-screen {
+        float: right;
+        margin-right: 24px;
+        display: block;
+        width: 100px;
+        height: 134px;
+        background-image: url(layout/ipad-lg.png);
+        background-size: 100px 134px;
+        background-repeat: no-repeat;
+        background-position: left top; }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          .result-item .result-screens .top .tablet-screen {
+            background-image: url(layout/ipad-lg@2x.png); } }
+        .result-item .result-screens .top .tablet-screen .snapshot {
+          padding: 6px; }
+    .result-item .result-screens .bottom {
+      width: 379px;
+      height: 268px; }
+      .result-item .result-screens .bottom .desktop-screen {
+        display: block;
+        width: 379px;
+        height: 268px;
+        background-image: url(layout/imac-lg.png);
+        background-size: 379px 268px;
+        background-repeat: no-repeat;
+        background-position: left top; }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          .result-item .result-screens .bottom .desktop-screen {
+            background-image: url(layout/imac-lg@2x.png); } }
+        .result-item .result-screens .bottom .desktop-screen .snapshot {
+          padding: 12px; }
+  .result-item .result-description {
+    margin-left: 339px;
+    margin-top: 12px;
+    padding: 20px 25px 40px 65px;
+    width: 470px;
+    background-color: #fff; }
+    .result-item .result-description footer {
+      *zoom: 1; }
+      .result-item .result-description footer:before, .result-item .result-description footer:after {
+        display: table;
+        content: "";
+        line-height: 0; }
+      .result-item .result-description footer:after {
+        clear: both; }
+      .result-item .result-description footer * {
+        float: left; }
+      .result-item .result-description footer a.case-study-btn {
+        display: inline-block;
+        background-color: #F05921;
+        color: #fff;
+        padding: 12px 24px;
+        font-size: 1.3em;
+        -webkit-animation-name: background-color;
+        -moz-animation-name: background-color;
+        animation-name: background-color;
+        -webkit-transition-duration: 0.1s;
+        -moz-transition-duration: 0.1s;
+        -ms-transition-duration: 0.1s;
+        -o-transition-duration: 0.1s;
+        transition-duration: 0.1s;
+        -webkit-transition-timing-function: linear;
+        -moz-transition-timing-function: linear;
+        -ms-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+        transition-timing-function: linear; }
+        .result-item .result-description footer a.case-study-btn:hover {
+          text-decoration: none;
+          background-color: #ff5212; }
+      .result-item .result-description footer .categories {
+        display: inline-block;
+        background-color: #E0DED9;
+        height: 40px;
+        padding: 4px 10px; }
+        .result-item .result-description footer .categories div {
+          display: block;
+          width: 54px;
+          height: 40px;
+          background-repeat: no-repeat;
+          background-position: center bottom;
+          margin: 0px 5px; }
+          .result-item .result-description footer .categories div.id-design {
+            background-size: 54px 40px;
+            background-image: url(layout/iddesign-med.png); }
+          .result-item .result-description footer .categories div.web-design {
+            background-size: 54px 36px;
+            background-image: url(layout/webdesign-med.png); }
+          .result-item .result-description footer .categories div.web-development {
+            background-size: 54px 31px;
+            background-image: url(layout/webdev-med.png); }
+          .result-item .result-description footer .categories div.online-marketing {
+            background-size: 54px 31px;
+            background-image: url(layout/onlinemarketing-med.png); }
+  .result-item .thumb-wrapper {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 100%;
+    height: 120px;
+    position: relative; }
+    .result-item .thumb-wrapper:before, .result-item .thumb-wrapper:after {
+      display: table;
+      content: "";
+      line-height: 0; }
+    .result-item .thumb-wrapper:after {
+      clear: both; }
+    .result-item .thumb-wrapper a.browse {
+      background-color: #5C5852;
+      display: block;
+      width: 30px;
+      height: 120px;
+      float: left;
+      margin: 0px;
+      cursor: pointer;
+      font-size: 1px;
+      position: absolute;
+      top: 0px;
+      background-repeat: no-repeat;
+      background-size: 12px 14px;
+      background-position: center center; }
+      .result-item .thumb-wrapper a.browse:hover {
+        background-color: #F15A21; }
+      .result-item .thumb-wrapper a.browse.left {
+        left: 0px;
+        background-image: url(layout/arrow-l1.png); }
+      .result-item .thumb-wrapper a.browse.right {
+        right: 0px;
+        background-image: url(layout/arrow-r1.png); }
+    .result-item .thumb-wrapper .scrollable {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 120px;
+      float: left;
+      margin: 0px;
+      padding: 0px; }
+      .result-item .thumb-wrapper .scrollable .items {
+        /* this cannot be too large */
+        width: 20000em;
+        height: 120px;
+        position: absolute;
+        background-color: #66615B;
+        padding: 0px; }
+        .result-item .thumb-wrapper .scrollable .items .thumb-screen {
+          float: left;
+          background-repeat: no-repeat;
+          background-position: left top;
+          margin-top: 10px;
+          margin-left: 10px;
+          display: block; }
+          .result-item .thumb-wrapper .scrollable .items .thumb-screen:first-child {
+            margin-left: 40px; }
+          .result-item .thumb-wrapper .scrollable .items .thumb-screen.desktop {
+            width: 140px;
+            height: 99px;
+            background-size: 140px 99px;
+            background-image: url(layout/imac-sm.png); }
+            .result-item .thumb-wrapper .scrollable .items .thumb-screen.desktop:hover {
+              /* @todo Add hover background image for desktop thumb */ }
+            .result-item .thumb-wrapper .scrollable .items .thumb-screen.desktop img {
+              margin: 6px; }
+          .result-item .thumb-wrapper .scrollable .items .thumb-screen.tablet {
+            width: 63px;
+            height: 83px;
+            background-size: 63px 83px;
+            background-image: url(layout/ipad-sm.png); }
+            .result-item .thumb-wrapper .scrollable .items .thumb-screen.tablet:hover {
+              /* @todo Add hover background image for tablet thumb */ }
+            .result-item .thumb-wrapper .scrollable .items .thumb-screen.tablet img {
+              margin: 5px; }
+          .result-item .thumb-wrapper .scrollable .items .thumb-screen.mobile {
+            width: 35px;
+            height: 54px;
+            background-size: 35px 54px;
+            background-image: url(layout/iphone-sm.png); }
+            .result-item .thumb-wrapper .scrollable .items .thumb-screen.mobile:hover {
+              /* @todo Add hover background image for mobile thumb */ }
+            .result-item .thumb-wrapper .scrollable .items .thumb-screen.mobile img {
+              margin: 4px; }
+          .result-item .thumb-wrapper .scrollable .items .thumb-screen img {
+            cursor: pointer; }
