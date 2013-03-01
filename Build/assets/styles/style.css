@@ -4005,13 +4005,14 @@ input[type="submit"].btn {
   border: 0px;
   *border: 0px solid #999999;
   /* IE6-7 */
-  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
   outline: none; }
+  .modal.team-modal {
+    width: 620px;
+    margin: -250px 0 0 -310px;
+    background-color: transparent; }
   .modal.fade {
     -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
     -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
@@ -5729,20 +5730,6 @@ section#home-widget {
     visibility: visible;
     opacity: 1; }
 
-svg.team_balloon {
-  width: 292px;
-  height: 215px; }
-  svg.team_balloon .strip .back-strip {
-    fill: #575350;
-    cursor: pointer; }
-  svg.team_balloon .strip .color-ring {
-    fill: pink;
-    cursor: pointer; }
-    svg.team_balloon .strip .color-ring.orange {
-      fill: orange; }
-  svg.team_balloon .bubble-pin {
-    cursor: pointer; }
-
 footer[role=masterfooter] {
   background: url(layout/topo_bg_footer.png) left top; }
   footer[role=masterfooter] .footer-nav {
@@ -5846,6 +5833,11 @@ footer[role=masterfooter] {
       color: #fff;
       font-size: 3em;
       text-align: center; }
+  .page-body.team {
+    background-image: url(layout/bg-team.png);
+    background-repeat: no-repeat;
+    background-size: 1660px 630px;
+    background-position: center 510px; }
 
 #expertise-widget {
   background: url(layout/path.png) no-repeat center top;
@@ -6053,15 +6045,27 @@ div.expertise-widget-image {
           .result-item .result-description footer .categories div.id-design {
             background-size: 54px 40px;
             background-image: url(layout/iddesign-med.png); }
+            @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+              .result-item .result-description footer .categories div.id-design {
+                background-image: url(layout/iddesign-med@2x.png); } }
           .result-item .result-description footer .categories div.web-design {
             background-size: 54px 36px;
             background-image: url(layout/webdesign-med.png); }
+            @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+              .result-item .result-description footer .categories div.web-design {
+                background-image: url(layout/webdesign-med@2x.png); } }
           .result-item .result-description footer .categories div.web-development {
             background-size: 54px 31px;
             background-image: url(layout/webdev-med.png); }
+            @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+              .result-item .result-description footer .categories div.web-development {
+                background-image: url(layout/webdev-med@2x.png); } }
           .result-item .result-description footer .categories div.online-marketing {
             background-size: 54px 31px;
             background-image: url(layout/onlinemarketing-med.png); }
+            @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+              .result-item .result-description footer .categories div.online-marketing {
+                background-image: url(layout/onlinemarketing-med@2x.png); } }
   .result-item .thumb-wrapper {
     *zoom: 1;
     margin: 0 auto;
@@ -6093,9 +6097,15 @@ div.expertise-widget-image {
       .result-item .thumb-wrapper a.browse.left {
         left: 0px;
         background-image: url(layout/arrow-l1.png); }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          .result-item .thumb-wrapper a.browse.left {
+            background-image: url(layout/arrow-l1@2x.png); } }
       .result-item .thumb-wrapper a.browse.right {
         right: 0px;
         background-image: url(layout/arrow-r1.png); }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          .result-item .thumb-wrapper a.browse.right {
+            background-image: url(layout/arrow-r1@2x.png); } }
     .result-item .thumb-wrapper .scrollable {
       position: relative;
       overflow: hidden;
@@ -6125,8 +6135,14 @@ div.expertise-widget-image {
             height: 99px;
             background-size: 140px 99px;
             background-image: url(layout/imac-sm.png); }
+            @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+              .result-item .thumb-wrapper .scrollable .items .thumb-screen.desktop {
+                background-image: url(layout/imac-sm@2x.png); } }
             .result-item .thumb-wrapper .scrollable .items .thumb-screen.desktop.active {
               background-image: url(layout/imac-sm-on.png); }
+              @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+                .result-item .thumb-wrapper .scrollable .items .thumb-screen.desktop.active {
+                  background-image: url(layout/imac-sm-on@2x.png); } }
             .result-item .thumb-wrapper .scrollable .items .thumb-screen.desktop img {
               margin: 6px; }
           .result-item .thumb-wrapper .scrollable .items .thumb-screen.tablet {
@@ -6134,8 +6150,14 @@ div.expertise-widget-image {
             height: 83px;
             background-size: 63px 83px;
             background-image: url(layout/ipad-sm.png); }
+            @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+              .result-item .thumb-wrapper .scrollable .items .thumb-screen.tablet {
+                background-image: url(layout/ipad-sm@2x.png); } }
             .result-item .thumb-wrapper .scrollable .items .thumb-screen.tablet.active {
               background-image: url(layout/ipad-sm-on.png); }
+              @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+                .result-item .thumb-wrapper .scrollable .items .thumb-screen.tablet.active {
+                  background-image: url(layout/ipad-sm@2x.png); } }
             .result-item .thumb-wrapper .scrollable .items .thumb-screen.tablet img {
               margin: 5px; }
           .result-item .thumb-wrapper .scrollable .items .thumb-screen.mobile {
@@ -6143,9 +6165,155 @@ div.expertise-widget-image {
             height: 54px;
             background-size: 35px 54px;
             background-image: url(layout/iphone-sm.png); }
+            @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+              .result-item .thumb-wrapper .scrollable .items .thumb-screen.mobile {
+                background-image: url(layout/iphone-sm@2x.png); } }
             .result-item .thumb-wrapper .scrollable .items .thumb-screen.mobile.active {
               background-image: url(layout/iphone-sm-on.png); }
+              @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+                .result-item .thumb-wrapper .scrollable .items .thumb-screen.mobile.active {
+                  background-image: url(layout/iphone-sm@2x.png); } }
             .result-item .thumb-wrapper .scrollable .items .thumb-screen.mobile img {
               margin: 4px; }
           .result-item .thumb-wrapper .scrollable .items .thumb-screen img {
             cursor: pointer; }
+
+.team-container {
+  *zoom: 1;
+  margin-top: 20px; }
+  .team-container:before, .team-container:after {
+    display: table;
+    content: "";
+    line-height: 0; }
+  .team-container:after {
+    clear: both; }
+  .team-container .team-row {
+    margin-bottom: 77px; }
+
+.team-modal .modal-body .top-row {
+  *zoom: 1; }
+  .team-modal .modal-body .top-row:before, .team-modal .modal-body .top-row:after {
+    display: table;
+    content: "";
+    line-height: 0; }
+  .team-modal .modal-body .top-row:after {
+    clear: both; }
+  .team-modal .modal-body .top-row .profile-picture {
+    display: block;
+    width: 220px;
+    height: 330px;
+    float: left; }
+  .team-modal .modal-body .top-row .profile-bio {
+    position: relative;
+    display: block;
+    width: 380px;
+    height: 330px;
+    padding: 0px 10px;
+    background-color: #fff;
+    float: left;
+    text-align: left; }
+    .team-modal .modal-body .top-row .profile-bio .close-row {
+      margin-top: 8px; }
+      .team-modal .modal-body .top-row .profile-bio .close-row button.close {
+        background-image: url(layout/close-btn1.png);
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        background-position: left top;
+        opacity: 1; }
+        .team-modal .modal-body .top-row .profile-bio .close-row button.close:hover {
+          opacity: 0.8; }
+    .team-modal .modal-body .top-row .profile-bio header {
+      padding: 0px 14px; }
+      .team-modal .modal-body .top-row .profile-bio header h3 {
+        color: #B2B1AD;
+        margin: 30px 0px 0px 0px;
+        font-size: 1.4em;
+        line-height: 1em; }
+      .team-modal .modal-body .top-row .profile-bio header h1 {
+        margin: 0px;
+        padding: 0px; }
+    .team-modal .modal-body .top-row .profile-bio .profile-content {
+      padding: 0px 14px; }
+    .team-modal .modal-body .top-row .profile-bio footer {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      padding: 24px; }
+      .team-modal .modal-body .top-row .profile-bio footer a.jornal-link {
+        color: #B2B1AD;
+        font-size: 1.1em;
+        padding: 5px 26px;
+        background-image: url(layout/ico-journal-sm.png);
+        background-repeat: no-repeat;
+        background-size: 18px 22px;
+        background-position: left center; }
+        .team-modal .modal-body .top-row .profile-bio footer a.jornal-link:hover {
+          color: #999893;
+          text-decoration: none; }
+.team-modal .modal-body .bottom-row {
+  background-color: #66615B;
+  min-height: 200px;
+  text-align: left;
+  padding: 20px; }
+  .team-modal .modal-body .bottom-row h4 {
+    color: #B2B1AD; }
+  .team-modal .modal-body .bottom-row p {
+    color: #fff; }
+.team-modal .modal-footer {
+  background-color: #F05921;
+  text-align: left;
+  padding: 10px; }
+  .team-modal .modal-footer .social-bar a {
+    color: #fff;
+    font-size: 1.3em;
+    margin: 0px 20px;
+    opacity: .9; }
+    .team-modal .modal-footer .social-bar a:hover {
+      text-decoration: none;
+      opacity: 1; }
+    .team-modal .modal-footer .social-bar a.twitter {
+      background-image: url(layout/twitter-sm.png);
+      background-repeat: no-repeat;
+      background-size: 18px 15px;
+      background-position: left center;
+      padding-left: 22px; }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        .team-modal .modal-footer .social-bar a.twitter {
+          background-image: url(layout/twitter-sm@2x.png); } }
+    .team-modal .modal-footer .social-bar a.linkedin {
+      background-image: url(layout/linkedin-sm.png);
+      background-repeat: no-repeat;
+      background-size: 16px 17px;
+      background-position: left center;
+      padding-left: 22px; }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        .team-modal .modal-footer .social-bar a.linkedin {
+          background-image: url(layout/linkedin-sm@2x.png); } }
+
+svg.team_balloon {
+  width: 292px;
+  height: 215px;
+  margin-right: 10px; }
+  svg.team_balloon .strip .back-strip {
+    fill: #575350;
+    cursor: pointer; }
+  svg.team_balloon .strip .color-ring {
+    fill: #fff;
+    cursor: pointer; }
+    svg.team_balloon .strip .color-ring.orange {
+      fill: orange; }
+  svg.team_balloon .bubble-pin {
+    cursor: pointer; }
+  svg.team_balloon text .team-member-name {
+    fill: #EDECE8;
+    color: #EDECE8;
+    font-family: Asap;
+    font-size: 16px; }
+  svg.team_balloon text .team-member-title {
+    fill: #B3B2AE;
+    color: #B3B2AE;
+    font-family: Asap;
+    font-size: 14px; }

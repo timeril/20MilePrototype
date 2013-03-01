@@ -64,7 +64,15 @@
 			text-align: center;
 		}
 	}
+
+	&.team {
+		background-image: url(layout/bg-team.png);
+		background-repeat: no-repeat;
+		background-size: 1660px 630px;
+		background-position: center 510px;
+	}
 }
 
 @import "expertise_page";
 @import "results_page";
+@import "team_page";

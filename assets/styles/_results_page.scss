@@ -138,21 +138,37 @@
 					&.id-design {
 						background-size: 54px 40px;
 						background-image: url(layout/iddesign-med.png);
+
+						@include retina {
+							background-image: url(layout/iddesign-med@2x.png);
+						}
 					}
 
 					&.web-design {
 						background-size: 54px 36px;
 						background-image: url(layout/webdesign-med.png);
+
+						@include retina {
+							background-image: url(layout/webdesign-med@2x.png);
+						}
 					}
 
 					&.web-development {
 						background-size: 54px 31px;
 						background-image: url(layout/webdev-med.png);
+
+						@include retina {
+							background-image: url(layout/webdev-med@2x.png);
+						}
 					}
 
 					&.online-marketing {
 						background-size: 54px 31px;
 						background-image: url(layout/onlinemarketing-med.png);
+
+						@include retina {
+							background-image: url(layout/onlinemarketing-med@2x.png);
+						}
 					}
 				}
 			}
@@ -188,11 +204,18 @@
 			&.left {
 				left: 0px;
 				background-image: url(layout/arrow-l1.png);
+
+				@include retina {
+					background-image: url(layout/arrow-l1@2x.png);
+				}
 			}
 
 			&.right {
 				right: 0px;
 				background-image: url(layout/arrow-r1.png);
+				@include retina {
+					background-image: url(layout/arrow-r1@2x.png);
+				}
 			}
 
 
@@ -233,8 +256,16 @@
 						background-size: 140px 99px;
 						background-image: url(layout/imac-sm.png);
 
+						@include retina {
+							background-image: url(layout/imac-sm@2x.png);
+						}
+
 						&.active {
 							background-image: url(layout/imac-sm-on.png);
+
+							@include retina {
+								background-image: url(layout/imac-sm-on@2x.png);
+							}
 						}
 
 						img {
@@ -248,8 +279,15 @@
 						background-size: 63px 83px;
 						background-image: url(layout/ipad-sm.png);
 
+						@include retina {
+							background-image: url(layout/ipad-sm@2x.png);
+						}
+
 						&.active {
 							background-image: url(layout/ipad-sm-on.png);
+							@include retina {
+								background-image: url(layout/ipad-sm@2x.png);
+							}
 						}
 
 						img {
@@ -262,9 +300,15 @@
 						height: 54px;
 						background-size: 35px 54px;
 						background-image: url(layout/iphone-sm.png);
+						@include retina {
+							background-image: url(layout/iphone-sm@2x.png);
+						}
 
 						&.active {
 							background-image: url(layout/iphone-sm-on.png);
+							@include retina {
+								background-image: url(layout/iphone-sm@2x.png);
+							}
 						}
 
 						img {
