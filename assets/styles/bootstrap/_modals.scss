@@ -46,7 +46,16 @@
   padding: 5px 10px 8px 10px;
   border-bottom: 0px solid #eee;
   // Close icon
-  .close { margin-top: 0px; }
+  .close { 
+    margin-top: 0px; 
+    background: url(layout/close-btn1.png) no-repeat center center;
+    padding: 1px 8px;
+    opacity: .6;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
   // Heading
   background-color: #66615B;
 }

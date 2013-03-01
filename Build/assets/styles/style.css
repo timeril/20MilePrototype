@@ -4026,7 +4026,12 @@ input[type="submit"].btn {
   border-bottom: 0px solid #eeeeee;
   background-color: #66615B; }
   .modal-header .close {
-    margin-top: 0px; }
+    margin-top: 0px;
+    background: url(layout/close-btn1.png) no-repeat center center;
+    padding: 1px 8px;
+    opacity: .6; }
+    .modal-header .close:hover {
+      opacity: 1; }
 
 .modal-body {
   position: relative;
@@ -6036,7 +6041,7 @@ div.expertise-widget-image {
           height: 40px;
           background-repeat: no-repeat;
           background-position: center bottom;
-          margin: 0px 5px; }
+          margin: 0px 4px; }
           .result-item .result-description footer .categories div.id-design {
             background-size: 54px 40px;
             background-image: url(layout/iddesign-med.png); }
