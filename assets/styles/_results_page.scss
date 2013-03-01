@@ -233,8 +233,8 @@
 						background-size: 140px 99px;
 						background-image: url(layout/imac-sm.png);
 
-						&:hover {
-							/* @todo Add hover background image for desktop thumb */
+						&.active {
+							background-image: url(layout/imac-sm-on.png);
 						}
 
 						img {
@@ -248,8 +248,8 @@
 						background-size: 63px 83px;
 						background-image: url(layout/ipad-sm.png);
 
-						&:hover {
-							/* @todo Add hover background image for tablet thumb */
+						&.active {
+							background-image: url(layout/ipad-sm-on.png);
 						}
 
 						img {
@@ -263,8 +263,8 @@
 						background-size: 35px 54px;
 						background-image: url(layout/iphone-sm.png);
 
-						&:hover {
-							/* @todo Add hover background image for mobile thumb */
+						&.active {
+							background-image: url(layout/iphone-sm-on.png);
 						}
 
 						img {

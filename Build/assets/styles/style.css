@@ -5828,6 +5828,14 @@ footer[role=masterfooter] {
         @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
           .page-title header h1.results {
             background-image: url(layout/ico-results-h1@2x.png); } }
+      .page-title header h1.team {
+        background-image: url(layout/ico-team-h1.png);
+        background-size: 80px 51px;
+        background-position: left 29px;
+        padding-left: 100px; }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          .page-title header h1.team {
+            background-image: url(layout/ico-team-h1@2x.png); } }
 
 .page-body {
   background-color: #afaeaa; }
@@ -6117,8 +6125,8 @@ div.expertise-widget-image {
             height: 99px;
             background-size: 140px 99px;
             background-image: url(layout/imac-sm.png); }
-            .result-item .thumb-wrapper .scrollable .items .thumb-screen.desktop:hover {
-              /* @todo Add hover background image for desktop thumb */ }
+            .result-item .thumb-wrapper .scrollable .items .thumb-screen.desktop.active {
+              background-image: url(layout/imac-sm-on.png); }
             .result-item .thumb-wrapper .scrollable .items .thumb-screen.desktop img {
               margin: 6px; }
           .result-item .thumb-wrapper .scrollable .items .thumb-screen.tablet {
@@ -6126,8 +6134,8 @@ div.expertise-widget-image {
             height: 83px;
             background-size: 63px 83px;
             background-image: url(layout/ipad-sm.png); }
-            .result-item .thumb-wrapper .scrollable .items .thumb-screen.tablet:hover {
-              /* @todo Add hover background image for tablet thumb */ }
+            .result-item .thumb-wrapper .scrollable .items .thumb-screen.tablet.active {
+              background-image: url(layout/ipad-sm-on.png); }
             .result-item .thumb-wrapper .scrollable .items .thumb-screen.tablet img {
               margin: 5px; }
           .result-item .thumb-wrapper .scrollable .items .thumb-screen.mobile {
@@ -6135,8 +6143,8 @@ div.expertise-widget-image {
             height: 54px;
             background-size: 35px 54px;
             background-image: url(layout/iphone-sm.png); }
-            .result-item .thumb-wrapper .scrollable .items .thumb-screen.mobile:hover {
-              /* @todo Add hover background image for mobile thumb */ }
+            .result-item .thumb-wrapper .scrollable .items .thumb-screen.mobile.active {
+              background-image: url(layout/iphone-sm-on.png); }
             .result-item .thumb-wrapper .scrollable .items .thumb-screen.mobile img {
               margin: 4px; }
           .result-item .thumb-wrapper .scrollable .items .thumb-screen img {

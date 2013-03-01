@@ -35,6 +35,17 @@
 					background-image: url(layout/ico-results-h1@2x.png); 
 				}
 			}
+
+			&.team  {
+				background-image: url(layout/ico-team-h1.png); 
+				background-size: 80px 51px;
+				background-position: left 29px;
+				padding-left: 100px;
+
+				@include retina {
+					background-image: url(layout/ico-team-h1@2x.png); 
+				}
+			}
 		}
 	}
 }
