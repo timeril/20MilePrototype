@@ -46,6 +46,28 @@
 					background-image: url(layout/ico-team-h1@2x.png); 
 				}
 			}
+
+			&.journal  {
+				background-image: url(layout/ico-journal-h1.png); 
+				background-size: 41px 49px;
+				background-position: left 29px;
+				padding-left: 64px;
+
+				@include retina {
+					background-image: url(layout/ico-journal-h1@2x.png); 
+				}
+			}
+
+			&.contact  {
+				background-image: url(layout/ico-contact-h1.png); 
+				background-size: 38px 55px;
+				background-position: left 22px;
+				padding-left: 50px;
+
+				@include retina {
+					background-image: url(layout/ico-contact-h1@2x.png); 
+				}
+			}
 		}
 	}
 }
@@ -71,8 +93,14 @@
 		background-size: 1660px 630px;
 		background-position: center 510px;
 	}
+
+	&.contact {
+		padding-bottom: 80px;
+	}
 }
 
 @import "expertise_page";
 @import "results_page";
 @import "team_page";
+@import "journal_page";
+@import "contact_page";

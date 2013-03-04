@@ -80,12 +80,12 @@ input[type="color"],
 .uneditable-input {
   display: inline-block;
   height: $baseLineHeight;
-  padding: 4px 6px;
+  padding: 9px 12px;
   margin-bottom: $baseLineHeight / 2;;
-  font-size: $baseFontSize;
+  font-size: $baseFontSize + 2;
   line-height: $baseLineHeight;
   color: $gray;
-  @include border-radius($inputBorderRadius);
+  // @include border-radius($inputBorderRadius);
   vertical-align: middle;
 }
 
@@ -124,10 +124,10 @@ input[type="color"],
 
   // Focus state
   &:focus {
-    border-color: rgba(82,168,236,.8);
+    // border-color: rgba(82,168,236,.8);
     outline: 0;
     outline: thin dotted \9; /* IE6-9 */
-    @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6));
+    // @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6));
   }
 }
 
@@ -648,9 +648,19 @@ legend + .control-group {
   // Float the labels left
   .control-label {
     float: left;
-    width: $horizontalComponentOffset - 20;
-    padding-top: 5px;
-    text-align: right;
+    // width: $horizontalComponentOffset - 20;
+    padding: 9px 15px;
+    text-align: center;
+    border: 1px solid #B2B1AD;
+    background-color: #B2B1AD;
+    color: #fff;
+    font-size: 1.3em;
+
+    &.textarea {
+      padding: 9px 0px;
+      width: 100%;
+      margin: 0px;
+    }
   }
   // Move over all input controls and content
   .controls {

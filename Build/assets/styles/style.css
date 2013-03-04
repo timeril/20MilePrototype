@@ -814,14 +814,11 @@ input[type="color"],
 .uneditable-input {
   display: inline-block;
   height: 24px;
-  padding: 4px 6px;
+  padding: 9px 12px;
   margin-bottom: 12px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 24px;
   color: #555555;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
   vertical-align: middle; }
 
 input,
@@ -873,13 +870,9 @@ input[type="color"],
   input[type="tel"]:focus,
   input[type="color"]:focus,
   .uneditable-input:focus {
-    border-color: rgba(82, 168, 236, 0.8);
     outline: 0;
     outline: thin dotted \9;
-    /* IE6-9 */
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6); }
+    /* IE6-9 */ }
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -1519,9 +1512,16 @@ legend + .control-group {
     clear: both; }
 .form-horizontal .control-label {
   float: left;
-  width: 160px;
-  padding-top: 5px;
-  text-align: right; }
+  padding: 9px 15px;
+  text-align: center;
+  border: 1px solid #b2b1ad;
+  background-color: #B2B1AD;
+  color: #fff;
+  font-size: 1.3em; }
+  .form-horizontal .control-label.textarea {
+    padding: 9px 0px;
+    width: 100%;
+    margin: 0px; }
 .form-horizontal .controls {
   *display: inline-block;
   *padding-left: 20px;
@@ -5823,6 +5823,22 @@ footer[role=masterfooter] {
         @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
           .page-title header h1.team {
             background-image: url(layout/ico-team-h1@2x.png); } }
+      .page-title header h1.journal {
+        background-image: url(layout/ico-journal-h1.png);
+        background-size: 41px 49px;
+        background-position: left 29px;
+        padding-left: 64px; }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          .page-title header h1.journal {
+            background-image: url(layout/ico-journal-h1@2x.png); } }
+      .page-title header h1.contact {
+        background-image: url(layout/ico-contact-h1.png);
+        background-size: 38px 55px;
+        background-position: left 22px;
+        padding-left: 50px; }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          .page-title header h1.contact {
+            background-image: url(layout/ico-contact-h1@2x.png); } }
 
 .page-body {
   background-color: #afaeaa; }
@@ -5838,6 +5854,8 @@ footer[role=masterfooter] {
     background-repeat: no-repeat;
     background-size: 1660px 630px;
     background-position: center 510px; }
+  .page-body.contact {
+    padding-bottom: 80px; }
 
 #expertise-widget {
   background: url(layout/path.png) no-repeat center top;
@@ -6317,3 +6335,91 @@ svg.team_balloon {
     color: #B3B2AE;
     font-family: Asap;
     font-size: 14px; }
+
+.contact-form-container {
+  background-color: #66615B;
+  padding: 30px 75px;
+  height: 572px; }
+  .contact-form-container .control-group {
+    margin-top: 0px; }
+  .contact-form-container legend {
+    border: 0px;
+    margin: 0px;
+    color: #fff;
+    font-size: 2em; }
+  .contact-form-container label {
+    float: left; }
+    .contact-form-container label[for=name] {
+      padding: 9px 16px 9px 16px; }
+    .contact-form-container label[for=email] {
+      padding: 9px 17px 9px 18px; }
+    .contact-form-container label[for=phone] {
+      padding: 9px 15px 9px 16px; }
+  .contact-form-container input, .contact-form-container textarea {
+    float: right; }
+    .contact-form-container input:focus, .contact-form-container textarea:focus {
+      outline: 0;
+      outline: thin dotted \9;
+      /* IE6-9 */ }
+      .contact-form-container input:focus + label, .contact-form-container textarea:focus + label {
+        background-color: #00748B;
+        border-color: #00748B; }
+  .contact-form-container input {
+    width: 206px; }
+  .contact-form-container textarea {
+    width: 284px;
+    height: 120px;
+    margin-top: 42px;
+    margin-bottom: 24px;
+    padding: 12px; }
+    .contact-form-container textarea + label.control-label {
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+      border: 0px;
+      position: absolute; }
+  .contact-form-container .message-box {
+    display: block;
+    width: 100%;
+    position: relative; }
+  .contact-form-container input[type=submit] {
+    padding: 12px 0px;
+    text-align: center;
+    width: 100%;
+    border: 0px;
+    background-color: #F05921;
+    color: #fff;
+    font-size: 1.4em; }
+    .contact-form-container input[type=submit]:hover {
+      background-color: #f26b39; }
+  .contact-form-container label.completed {
+    background-color: #A5CD38;
+    border-color: #A5CD38; }
+
+.contact-info {
+  margin-left: -20px;
+  margin-right: 20px;
+  height: 552px;
+  background: white url(layout/city@2x.png) no-repeat left bottom;
+  background-size: 470px 262px;
+  padding: 40px 50px; }
+  .contact-info ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px; }
+    .contact-info ul li {
+      display: block;
+      border-bottom: 1px dashed #cccccc;
+      padding: 20px 0px; }
+      .contact-info ul li.phone a {
+        font-size: 3.3em;
+        color: #66615B; }
+      .contact-info ul li.email a {
+        font-size: 2.9em;
+        color: #F05921; }
+      .contact-info ul li.address {
+        font-size: 1.6em;
+        color: #66615B;
+        border-bottom: 0px; }
+        .contact-info ul li.address a {
+          color: #F05921; }
