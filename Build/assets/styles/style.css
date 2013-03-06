@@ -6391,15 +6391,17 @@ svg.team_balloon {
   padding: 28px 28px 60px 28px;
   float: left;
   margin-top: 100px; }
+  .journal article.odd {
+    float: right; }
+  .journal article.even {
+    float: left;
+    margin-right: 4px; }
   .journal article.featured {
     margin-top: 0px;
     margin-right: 392px;
     margin-bottom: 100px; }
-  .journal article.odd {
-    margin-right: 4px; }
-  .journal article.even {
-    float: right;
-    margin-top: -60px; }
+    .journal article.featured + article {
+      margin-top: -60px; }
   .journal article header {
     margin-bottom: 20px; }
     .journal article header h1 {
