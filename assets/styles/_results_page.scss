@@ -2,7 +2,7 @@
 
 .result-item {
 	
-	@include clearfix;
+	@include clearfix();
 	margin-bottom: 80px;
 
 	.result-screens {
@@ -12,7 +12,7 @@
 
 		.top {
 
-			@include clearfix;
+			@include clearfix();
 			display: block;
 			width: 379px;
 			height: 134px;
@@ -99,7 +99,7 @@
 		}
 
 		footer {
-			@include clearfix;
+			@include clearfix();
 
 			* {
 				float: left;
@@ -176,7 +176,7 @@
 	}
 
 	.thumb-wrapper {
-		@include clearfix;
+		@include clearfix();
 		margin: 0 auto;
 		width: 100%;
 		height: 120px;

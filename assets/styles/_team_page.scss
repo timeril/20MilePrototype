@@ -1,5 +1,5 @@
 .team-container {
-	@include clearfix;
+	@include clearfix();
 	margin-top: 20px;
 
 	.team-row {
@@ -11,7 +11,7 @@
 
 	.modal-body {
 		.top-row {
-			@include clearfix;
+			@include clearfix();
 			.profile-picture {
 				display: block;
 				width: 220px;

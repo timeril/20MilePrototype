@@ -97,6 +97,18 @@
 	&.contact {
 		padding-bottom: 80px;
 	}
+
+	&.journal {
+
+		padding-bottom: 100px;
+
+		& > .container > .span12 {
+			background-image: url(layout/dotted_vertical_bg.png);
+			background-repeat: repeat-y;
+			background-position: center top;
+			padding-bottom: 100px;
+		}
+	}
 }
 
 @import "expertise_page";
