@@ -5300,8 +5300,7 @@ body {
 
 p {
   font-family: Adelle;
-  font-size: 1.1em;
-  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4); }
+  font-size: 1.1em; }
 
 div[role=masterhead] {
   background-color: #fff; }
@@ -5871,6 +5870,9 @@ footer[role=masterfooter] {
       color: #fff;
       font-size: 3em;
       text-align: center; }
+      .page-body .intro-text h3 em {
+        color: #66615B;
+        display: block; }
   .page-body.team {
     background-image: url(layout/bg-team.png);
     background-repeat: no-repeat;
@@ -6555,6 +6557,39 @@ svg.team_balloon {
       color: #F05921;
       font-weight: bold;
       line-height: 1.6em; }
+  .journal-detail article footer {
+    position: relative; }
+    .journal-detail article footer svg {
+      position: absolute;
+      margin-left: -131px; }
+      .journal-detail article footer svg .colored-ring {
+        fill: #A5CE39; }
+    .journal-detail article footer .bar {
+      *zoom: 1;
+      margin-left: -44px;
+      margin-top: 1px; }
+      .journal-detail article footer .bar:before, .journal-detail article footer .bar:after {
+        display: table;
+        content: "";
+        line-height: 0; }
+      .journal-detail article footer .bar:after {
+        clear: both; }
+      .journal-detail article footer .bar .author-info {
+        display: inline-block;
+        background-color: #56524F;
+        float: left;
+        padding: 9px 30px 10px 30px; }
+        .journal-detail article footer .bar .author-info .name {
+          color: #fff;
+          line-height: 1.2em; }
+        .journal-detail article footer .bar .author-info .position {
+          color: #ccc;
+          font-size: 0.9em;
+          line-height: 1.1em; }
+      .journal-detail article footer .bar .social {
+        display: inline-block;
+        background-color: pink;
+        padding: 10px 30px 10px 30px; }
 
 .contact-form-container {
   background-color: #66615B;

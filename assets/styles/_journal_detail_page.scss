@@ -53,6 +53,52 @@
 				line-height: 1.6em;
 			}
 		}
+
+		footer {
+
+			position: relative;
+
+			svg {
+				position: absolute;
+				margin-left: -131px;
+
+				.colored-ring {
+					fill: #A5CE39;
+				}
+			}
+
+			.bar {
+				@include clearfix();
+				margin-left: -44px;
+				margin-top: 1px;
+
+				.author-info {
+					display: inline-block;
+					background-color: #56524F;
+					float: left;
+
+					padding: 9px 30px 10px 30px;
+
+					.name {
+						color: #fff;
+						line-height: 1.2em;
+					}
+
+					.position{
+						color: #ccc;
+						font-size: 0.9em;
+						line-height: 1.1em;
+					}
+				}
+
+				.social {
+					display: inline-block;
+					// background-color: #aaa9a5;
+					background-color: pink;
+					padding: 10px 30px 10px 30px;
+				}
+			}
+		}
 	}
 
 }

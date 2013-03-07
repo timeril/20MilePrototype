@@ -84,6 +84,11 @@
 			color: #fff;
 			font-size: 3em;
 			text-align: center;
+
+			em {
+				color: #66615B;
+				display: block;
+			}
 		}
 	}
 
@@ -125,7 +130,9 @@
 
 @import "expertise_page";
 @import "results_page";
+@import "case_study_page";
 @import "team_page";
 @import "journal_page";
 @import "journal_detail_page";
+@import "case_study_page";
 @import "contact_page";
