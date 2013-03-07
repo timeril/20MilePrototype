@@ -145,27 +145,39 @@ section#home-widget {
 			}
 
 			&#hw-identity-design {
-				background-image: url(layout/mountains.png);
+				background-image: url(layout/iddesign-lg.png);
 				@include mobile-only {
 					left: 0px;
 				}
+				@include retina {
+					background-image: url(layout/iddesign-lg@2x.png);
+				}
 			}
 			&#hw-online-marketing {
-				background-image: url(layout/island.png);
+				background-image: url(layout/onlinemarketing-lg.png);
 				@include mobile-only {
 					left: 25%;
 				}
+				@include retina {
+					background-image: url(layout/onlinemarketing-lg@2x.png);
+				}
 			}
 			&#hw-web-design {
-				background-image: url(layout/city.png);
+				background-image: url(layout/webdesign-lg.png);
 				@include mobile-only {
 					left: 50%;
 				}
+				@include retina {
+					background-image: url(layout/webdesign-lg@2x.png);
+				}
 			}
 			&#hw-web-development {
-				background-image: url(layout/desert.png);
+				background-image: url(layout/webdev-lg.png);
 				@include mobile-only {
 					left: 75%;
+				}
+				@include retina {
+					background-image: url(layout/webdev-lg@2x.png);
 				}
 			}
 		}

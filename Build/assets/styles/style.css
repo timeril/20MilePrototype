@@ -5298,6 +5298,11 @@ body {
     body {
       padding: 0px; } }
 
+p {
+  font-family: Adelle;
+  font-size: 1.1em;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4); }
+
 div[role=masterhead] {
   background-color: #fff; }
   div[role=masterhead] header a.logo {
@@ -5681,25 +5686,37 @@ section#home-widget {
       section#home-widget #hw-nav a:hover {
         text-decoration: none; }
       section#home-widget #hw-nav a#hw-identity-design {
-        background-image: url(layout/mountains.png); }
+        background-image: url(layout/iddesign-lg.png); }
         @media (max-width: 480px) {
           section#home-widget #hw-nav a#hw-identity-design {
             left: 0px; } }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          section#home-widget #hw-nav a#hw-identity-design {
+            background-image: url(layout/iddesign-lg@2x.png); } }
       section#home-widget #hw-nav a#hw-online-marketing {
-        background-image: url(layout/island.png); }
+        background-image: url(layout/onlinemarketing-lg.png); }
         @media (max-width: 480px) {
           section#home-widget #hw-nav a#hw-online-marketing {
             left: 25%; } }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          section#home-widget #hw-nav a#hw-online-marketing {
+            background-image: url(layout/onlinemarketing-lg@2x.png); } }
       section#home-widget #hw-nav a#hw-web-design {
-        background-image: url(layout/city.png); }
+        background-image: url(layout/webdesign-lg.png); }
         @media (max-width: 480px) {
           section#home-widget #hw-nav a#hw-web-design {
             left: 50%; } }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          section#home-widget #hw-nav a#hw-web-design {
+            background-image: url(layout/webdesign-lg@2x.png); } }
       section#home-widget #hw-nav a#hw-web-development {
-        background-image: url(layout/desert.png); }
+        background-image: url(layout/webdev-lg.png); }
         @media (max-width: 480px) {
           section#home-widget #hw-nav a#hw-web-development {
             left: 75%; } }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          section#home-widget #hw-nav a#hw-web-development {
+            background-image: url(layout/webdev-lg@2x.png); } }
   section#home-widget #hw-sectional {
     padding-top: 60px;
     position: relative;
@@ -5867,6 +5884,13 @@ footer[role=masterfooter] {
       background-image: url(layout/dotted_vertical_bg.png);
       background-repeat: repeat-y;
       background-position: center top;
+      padding-bottom: 100px; }
+  .page-body.journal-detail {
+    padding-bottom: 100px; }
+    .page-body.journal-detail > .container > .span12 {
+      background-image: url(layout/dotted_vertical_bg.png);
+      background-repeat: repeat-y;
+      background-position: 70px top;
       padding-bottom: 100px; }
 
 #expertise-widget {
@@ -6436,7 +6460,8 @@ svg.team_balloon {
       float: left; }
       .journal article footer time .month {
         display: block;
-        font-size: 1.5em; }
+        font-size: 1.4em;
+        text-transform: uppercase; }
       .journal article footer time .day {
         display: block;
         font-size: 2.3em; }
@@ -6487,6 +6512,44 @@ svg.team_balloon {
     margin-left: 444px;
     margin-top: -214px; }
     .journal article blockquote h3 {
+      font-family: Adelle;
+      font-style: italic;
+      color: #F05921;
+      font-weight: bold;
+      line-height: 1.6em; }
+
+.journal-detail article {
+  padding: 30px 90px 30px 150px; }
+  .journal-detail article h1, .journal-detail article h2, .journal-detail article h3, .journal-detail article h4, .journal-detail article h5, .journal-detail article h6 {
+    color: #fff; }
+  .journal-detail article header h1 {
+    font-size: 2.1em;
+    line-height: 1.4em; }
+  .journal-detail article header time {
+    position: absolute;
+    display: inline-block;
+    background-color: #F05921;
+    color: #fff;
+    padding: 1px 10px 5px 10px;
+    text-align: center;
+    margin-left: -104px; }
+    .journal-detail article header time .month {
+      display: block;
+      font-size: 1.4em;
+      text-transform: uppercase; }
+    .journal-detail article header time .day {
+      display: block;
+      font-size: 2.3em; }
+  .journal-detail article p {
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1); }
+  .journal-detail article blockquote {
+    width: 500px;
+    background-color: #fff;
+    padding: 28px;
+    margin: 0;
+    border-left: 0;
+    margin-left: -86px; }
+    .journal-detail article blockquote h3 {
       font-family: Adelle;
       font-style: italic;
       color: #F05921;
