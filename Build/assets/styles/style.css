@@ -5349,36 +5349,36 @@ div[role=masterhead] {
           background-repeat: no-repeat;
           background-position: center top;
           text-decoration: none; }
-      div[role=masterhead] header nav ul li.nav-expertise a:hover {
+      div[role=masterhead] header nav ul li#nav-expertise a:hover {
         background-image: url(layout/icon_expertise.png);
         background-size: 29px;
         background-position: 15px top; }
         @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-          div[role=masterhead] header nav ul li.nav-expertise a:hover {
+          div[role=masterhead] header nav ul li#nav-expertise a:hover {
             background-image: url(layout/ico-expertise-h1@2x.png); } }
-      div[role=masterhead] header nav ul li.nav-results a:hover {
+      div[role=masterhead] header nav ul li#nav-results a:hover {
         background-image: url(layout/ico-results-nav.png);
         background-size: 27px 29px; }
         @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-          div[role=masterhead] header nav ul li.nav-results a:hover {
+          div[role=masterhead] header nav ul li#nav-results a:hover {
             background-image: url(layout/ico-results-nav@2x.png); } }
-      div[role=masterhead] header nav ul li.nav-team a:hover {
+      div[role=masterhead] header nav ul li#nav-team a:hover {
         background-image: url(layout/ico-team-nav.png);
         background-size: 41px 26px; }
         @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-          div[role=masterhead] header nav ul li.nav-team a:hover {
+          div[role=masterhead] header nav ul li#nav-team a:hover {
             background-image: url(layout/ico-team-nav@2x.png); } }
-      div[role=masterhead] header nav ul li.nav-journal a:hover {
+      div[role=masterhead] header nav ul li#nav-journal a:hover {
         background-image: url(layout/ico-journal-nav.png);
         background-size: 23px 27px; }
         @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-          div[role=masterhead] header nav ul li.nav-journal a:hover {
+          div[role=masterhead] header nav ul li#nav-journal a:hover {
             background-image: url(layout/ico-journal-nav@2x.png); } }
-      div[role=masterhead] header nav ul li.nav-contact a:hover {
+      div[role=masterhead] header nav ul li#nav-contact a:hover {
         background-image: url(layout/ico-contact-nav.png);
         background-size: 23px 33px; }
         @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-          div[role=masterhead] header nav ul li.nav-contact a:hover {
+          div[role=masterhead] header nav ul li#nav-contact a:hover {
             background-image: url(layout/ico-contact-nav@2x.png); } }
 
 div[role=home] {
