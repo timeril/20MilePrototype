@@ -6564,6 +6564,8 @@ svg.team_balloon {
       margin-left: -131px; }
       .journal-detail article footer svg .colored-ring {
         fill: #A5CE39; }
+    .journal-detail article footer .post-label {
+      margin-left: -14px; }
     .journal-detail article footer .bar {
       *zoom: 1;
       margin-left: -44px;
@@ -6588,8 +6590,14 @@ svg.team_balloon {
           line-height: 1.1em; }
       .journal-detail article footer .bar .social {
         display: inline-block;
-        background-color: pink;
+        background-color: #aaa9a5;
         padding: 10px 30px 10px 30px; }
+        .journal-detail article footer .bar .social .tags {
+          color: #fff;
+          margin-right: 20px; }
+          .journal-detail article footer .bar .social .tags a {
+            color: #fff;
+            text-transform: capitalize; }
 
 .contact-form-container {
   background-color: #66615B;

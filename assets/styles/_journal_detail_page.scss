@@ -67,6 +67,10 @@
 				}
 			}
 
+			.post-label {
+				margin-left: -14px;
+			}
+
 			.bar {
 				@include clearfix();
 				margin-left: -44px;
@@ -93,9 +97,18 @@
 
 				.social {
 					display: inline-block;
-					// background-color: #aaa9a5;
-					background-color: pink;
+					background-color: #aaa9a5;
 					padding: 10px 30px 10px 30px;
+
+					.tags {
+						color: #fff;
+						margin-right: 20px;
+
+						a {
+							color: #fff;
+							text-transform: capitalize;
+						}
+					}
 				}
 			}
 		}
